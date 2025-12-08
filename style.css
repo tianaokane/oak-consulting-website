@@ -103,6 +103,12 @@ ul {
 }
 
 /* Header */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;   /* space between leaf and text */
+}
+
 .site-header {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border-subtle);
@@ -117,28 +123,19 @@ ul {
 }
 
 /* Brand block */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.brand-leaf {
+  height: 120px;      /* adjust between 24–36px depending on taste */
+  width: auto;
+  display: block;
 }
 
 .brand-mark {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.leaf-icon {
-  font-size: 1.4rem;
-  color: var(--color-primary);
 }
 
 .brand-divider {
-  width: 1px;
-  height: 2.25rem;
-  background: #111111;
-  display: inline-block;
+  display: none;  /* hide the old divider line */
 }
 
 .brand-text {
