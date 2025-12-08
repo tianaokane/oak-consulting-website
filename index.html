@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Favicon -->
+  <link rel="icon" sizes="any" type="image/png" href="assets/favicon/transparent-red-favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
+
+
   <meta charset="UTF-8" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
   <title>Oak Consultancy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Oak Consultancy works with charities, SMEs and social enterprises to improve strategy, operations and impact.">
+  <meta name="description" content="Oak Consultancy helps charities, community groups and small businesses to find funding, plan strategically and manage tenders with confidence.">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="top">
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">Oak Consultancy</div>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <!-- Swap this for an <img src="logo.svg"> when you have a file -->
+          <span class="leaf-icon">🍂</span>
+          <span class="brand-divider"></span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Oak Consultancy</span>
+          <span class="brand-tagline">Opportunities, Access, Know-How</span>
+        </div>
+      </div>
+
       <nav class="nav" aria-label="Main navigation">
         <a href="#top">Home</a>
         <a href="#services">Services</a>
-        <a href="#about">About</a>
+        <a href="#who-we-help">Who we help</a>
+        <a href="#packages">Packages</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -29,39 +48,40 @@
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-inner">
-        <div>
-          <h1 id="hero-title">Strategic consulting for organisations that want to grow thoughtfully.</h1>
-          <p>
-            Oak Consultancy partners with charities, SMEs and social enterprises to build clarity,
-            strengthen operations and create sustainable impact.
+        <div class="hero-content">
+          <h1 id="hero-title">Funding and strategic support for organisations that need results, not jargon.</h1>
+          <p class="intro-text">
+            Oak Consultancy supports charities, community groups and small businesses to find and secure
+            funding, plan for the future and manage tenders with confidence.
           </p>
 
-          <ul style="margin: 1rem 0 1.5rem; padding-left: 1.2rem;">
-            <li>Evidence-based, practical recommendations</li>
-            <li>Light-touch, collaborative approach</li>
-            <li>Support from strategy through implementation</li>
+          <ul class="hero-list">
+            <li>Not sure where to find the right funds?</li>
+            <li>Struggling to find time to write bids?</li>
+            <li>Unsure how to speak the funders’ language?</li>
+            <li>Tired of disappointing “unsuccessful” emails?</li>
           </ul>
 
-          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+          <div class="hero-actions">
             <a href="#contact" class="btn-primary">Book a consultation</a>
-            <a href="#services" style="align-self: center; font-size: 0.95rem; text-decoration: underline;">
-              Explore our services
-            </a>
+            <a href="#services" class="btn-link">Explore our services</a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Trust strip -->
-    <section class="section" aria-label="Trusted organisations" style="padding-top: 1.5rem; padding-bottom: 1.5rem;">
+    <section class="trust-strip" aria-label="Trusted organisations">
       <div class="container">
-        <p style="font-size: 0.9rem; opacity: 0.85; margin-bottom: 0.75rem;">
-          Trusted by organisations across community, education and enterprise sectors.
+        <p class="trust-text">
+          Working with organisations across charity, education, sports and community sectors.
         </p>
-        <div class="grid" style="grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; font-size: 0.85rem; opacity: 0.75;">
-          <div>Partner Organisation A</div>
-          <div>Partner Organisation B</div>
-          <div>Partner Organisation C</div>
+        <div class="trust-logos">
+          <span class="trust-pill">Charities</span>
+          <span class="trust-pill">Schools &amp; PTAs</span>
+          <span class="trust-pill">Sports clubs</span>
+          <span class="trust-pill">Community groups</span>
+          <span class="trust-pill">Small businesses</span>
         </div>
       </div>
     </section>
@@ -69,82 +89,125 @@
     <!-- Services -->
     <section class="section" id="services" aria-labelledby="services-title">
       <div class="container">
-        <h2 id="services-title">Services</h2>
-        <p style="max-width: 40rem; margin-bottom: 1.75rem;">
-          Whether you need to clarify direction, strengthen operations or support your team through change,
-          Oak Consultancy provides clear, practical support tailored to your context.
+        <h2 id="services-title">Our Services</h2>
+        <p class="section-intro">
+          We focus on three core areas where the right support can unlock funding and long-term impact.
         </p>
 
         <div class="grid services-grid">
           <article class="card">
-            <h3>Strategy Workshops</h3>
+            <h3>Bid Writing</h3>
             <p>
-              Facilitated sessions to clarify your organisation’s direction, priorities and measures of success.
-              We help teams align around a shared picture of where you are now and where you want to go.
+              From smaller grants to larger, more complex bids, we help you identify suitable opportunities
+              and prepare strong, clear applications tailored to funders’ requirements.
             </p>
-            <p style="font-size: 0.9rem; margin-top: 0.75rem;">
-              Ideal for: annual planning, new leadership, board away days.
+            <p class="card-tagline">
+              Available as a monthly subscription or one-off projects.
             </p>
-            <!-- Future: link to /services.html#strategy -->
           </article>
 
           <article class="card">
-            <h3>Operational Review</h3>
+            <h3>Strategic Planning</h3>
             <p>
-              A light-touch audit of your systems, processes and ways of working. We identify gaps, risks and
-              opportunities, and provide focused recommendations you can realistically action.
+              We work with you to develop realistic, achievable plans for your organisation or project,
+              then align funding opportunities to help turn your plans into reality.
             </p>
-            <p style="font-size: 0.9rem; margin-top: 0.75rem;">
-              Ideal for: growing teams, funding changes, process bottlenecks.
+            <p class="card-tagline">
+              Ideal for boards, committees and growing organisations.
             </p>
-            <!-- Future: link to /services.html#operations -->
           </article>
 
           <article class="card">
-            <h3>Change Support</h3>
+            <h3>Tender Management</h3>
             <p>
-              Practical support to turn plans into real, measurable change. We can act as a thought partner,
-              project support or critical friend as you implement new strategies or ways of working.
+              We monitor relevant tenders, highlight opportunities and support you to prepare and submit
+              complete, compliant responses on time.
             </p>
-            <p style="font-size: 0.9rem; margin-top: 0.75rem;">
-              Ideal for: restructuring, programme redesign, new initiatives.
+            <p class="card-tagline">
+              Helping you stay on top of e-tenders and local opportunities.
             </p>
-            <!-- Future: link to /services.html#change -->
           </article>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about" aria-labelledby="about-title">
+    <!-- Who we help -->
+    <section class="section" id="who-we-help" aria-labelledby="who-title">
       <div class="container">
-        <h2 id="about-title">About Oak</h2>
-        <p>
-          Oak Consultancy works with purpose-driven organisations that want to make good decisions, not just
-          quick ones. We bring a calm, structured and people-focused approach to strategy and operations, so
-          your team has the clarity and confidence to move forward.
+        <h2 id="who-title">Who We Help</h2>
+        <p class="section-intro">
+          Oak Consultancy works with a wide range of organisations who are making a difference in their communities.
         </p>
-        <p>
-          Our work is grounded in listening first: understanding your context, constraints and ambitions.
-          From there, we translate complexity into clear choices and practical next steps that fit your
-          capacity and culture.
+        <div class="who-we-help">
+          <ul>
+            <li>Charities</li>
+            <li>Small businesses</li>
+            <li>Community groups</li>
+            <li>Sports clubs</li>
+          </ul>
+          <ul>
+            <li>Schools &amp; PTAs</li>
+            <li>Churches</li>
+            <li>Social enterprises</li>
+            <li>Community Interest Companies</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section class="section" id="packages" aria-labelledby="packages-title">
+      <div class="container">
+        <h2 id="packages-title">Our Packages</h2>
+        <p class="section-intro">
+          Choose the level of support that fits your organisation. All packages start with an initial
+          conversation to understand your needs and context.
         </p>
-        <p>
-          We care about impact that lasts. That means building capability within your organisation, rather
-          than creating dependency on external consultants, and leaving you with tools and insights you can
-          continue to use.
-        </p>
-        <!-- Future: link out to a dedicated About page -->
-        <!-- <a href="about.html" style="font-size: 0.95rem; text-decoration: underline;">Read more about Oak →</a> -->
+
+        <div class="packages-grid">
+          <article class="package-card">
+            <h3 class="package-tier">Basic</h3>
+            <p class="package-price">£50 <span>/ month</span></p>
+            <ul>
+              <li>Initial assessment of your organisation’s funding needs</li>
+              <li>Needs reviewed twice per year</li>
+              <li>Funding alert service for suitable opportunities</li>
+              <li>Option for Oak Consultancy to complete applications at an agreed hourly rate</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <h3 class="package-tier">Standard</h3>
+            <p class="package-price">£285 <span>/ month</span></p>
+            <ul>
+              <li>Up to 100 hours of consultancy support across 12 months</li>
+              <li>Initial consultation plus quarterly review meetings</li>
+              <li>Funding identification and alerts</li>
+              <li>Writing and submission of applications on your behalf</li>
+              <li>Support with monitoring and evaluation for funded projects</li>
+            </ul>
+          </article>
+
+          <article class="package-card">
+            <h3 class="package-tier">Premium</h3>
+            <p class="package-price">£350 <span>/ month</span></p>
+            <ul>
+              <li>Everything in the Standard package</li>
+              <li>120 consultancy hours per year</li>
+              <li>Monthly written update for your board or committee</li>
+              <li>Attendance at your AGM to report on grants and fundraising performance</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- CTA band -->
-    <section class="section" aria-label="Consultation call-to-action" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <section class="section cta-band" aria-label="Consultation call-to-action">
       <div class="container">
-        <div class="card" style="display: flex; flex-direction: column; gap: 0.75rem;">
-          <h3 style="margin-bottom: 0.25rem;">Ready to move your organisation forward?</h3>
-          <p style="margin-bottom: 0.75rem;">
+        <div class="card cta-card">
+          <h3>Ready to move your organisation forward?</h3>
+          <p>
             Book a free 30-minute conversation to explore your current challenges, priorities and where
             Oak Consultancy can help.
           </p>
@@ -157,11 +220,16 @@
     <section class="section" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <h2 id="contact-title">Contact</h2>
-        <p>
-          Ready to chat? Fill in the form below or email
-          <a href="mailto:info@oakconsultancy.co.uk">info@oakconsultancy.co.uk</a>.
-          We usually reply within 1–2 business days.
+        <p class="section-intro">
+          Ready to chat? Fill in the form below or get in touch directly:
         </p>
+        <p class="contact-details">
+          <strong>Columba:</strong> 07843 956546 &middot;
+          <strong>Karen:</strong> 07515 098543<br>
+          <a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a> &middot;
+          <a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a>
+        </p>
+
         <form class="contact-form">
           <label>
             Name
@@ -189,7 +257,6 @@
     <div class="container">
       <small>
         © <span id="year"></span> Oak Consultancy. All rights reserved.
-        <!-- Future: add links to privacy, cookies, accessibility -->
       </small>
     </div>
   </footer>

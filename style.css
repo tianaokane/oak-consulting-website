@@ -5,11 +5,10 @@
   --font-heading: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* Your consultancy palette (approx from image) */
+  /* Palette – aligned with Oak logo */
   --color-charcoal: #332d33;
-  --color-deep-blue: #355f7c;
-  --color-earth-brown: #6b5036;
-  --color-olive: #5e6f2e;
+  --color-terra: #ba4734;
+  --color-terra-dark: #8c2e1d;
   --color-light: #f8f5f0;
   --color-white: #ffffff;
 
@@ -18,8 +17,8 @@
   --color-surface: var(--color-white);
   --color-text-main: var(--color-charcoal);
   --color-border-subtle: #e5e7eb;
-  --color-primary: var(--color-deep-blue);
-  --color-primary-strong: var(--color-olive);
+  --color-primary: var(--color-terra);
+  --color-primary-strong: var(--color-terra-dark);
 
   /* Type scale */
   --font-size-body: 1rem;
@@ -73,15 +72,27 @@ h4 {
   font-size: var(--font-size-h4);
 }
 
+p {
+  margin: 0 0 0.75rem;
+}
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
   display: block;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
 }
 
 .container {
@@ -102,13 +113,54 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
+  gap: 2rem;
 }
 
-.logo {
-  font-weight: 700;
+/* Brand block */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-/* For mobile, stack nav below if needed */
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.leaf-icon {
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.brand-divider {
+  width: 1px;
+  height: 2.25rem;
+  background: #111111;
+  display: inline-block;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-heading); /* Poppins */
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+}
+
+.brand-tagline {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-top: 0.15rem;
+}
+
+/* Nav */
 .nav {
   display: flex;
   gap: 1rem;
@@ -117,16 +169,46 @@ img {
 
 .nav a {
   padding: 0.25rem 0;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 /* Hero */
 .hero {
   padding: 3rem 0 2.5rem;
-  background: var(--color-surface); /* was #f0f4f8 */
+  background: var(--color-surface);
 }
 
-.hero-inner h1 {
-  font-size: var(--font-size-h2); /* or leave as is if you prefer */
+.hero-inner {
+  display: flex;
+}
+
+.hero-content {
+  max-width: 40rem;
+}
+
+.intro-text {
+  max-width: 36rem;
+}
+
+.hero-list {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-list li + li {
+  margin-top: 0.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
 }
 
 /* Buttons */
@@ -139,10 +221,43 @@ img {
   color: var(--color-white);
   font-weight: 600;
   cursor: pointer;
+  font-size: 0.95rem;
 }
 
 .btn-primary:hover {
   background: var(--color-primary-strong);
+  text-decoration: none;
+}
+
+.btn-link {
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+/* Trust strip */
+.trust-strip {
+  padding: 1.5rem 0;
+  background: transparent;
+}
+
+.trust-text {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+}
+
+.trust-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trust-pill {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface);
 }
 
 /* Sections */
@@ -151,8 +266,12 @@ img {
 }
 
 .section h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-intro {
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
 }
 
 /* Cards / grid */
@@ -162,22 +281,96 @@ img {
 }
 
 .services-grid {
-  /* 1 column by default on mobile */
   grid-template-columns: 1fr;
 }
 
 .card {
-  background: #ffffff;
+  background: var(--color-surface);
   border-radius: 0.75rem;
-  padding: 1.25rem;
+  padding: 1.25rem 1.4rem;
   box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
 }
 
-/* Contact form */
+.card-tagline {
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+  opacity: 0.9;
+}
+
+/* Who we help */
+.who-we-help {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.who-we-help ul {
+  list-style: disc;
+}
+
+/* Packages */
+.packages-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.package-card {
+  background: var(--color-surface);
+  border-radius: 1rem;
+  padding: 1.4rem 1.5rem 1.6rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.package-tier {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.25rem;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.package-price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: inherit;
+}
+
+.package-card ul {
+  font-size: 0.9rem;
+}
+
+.package-card li + li {
+  margin-top: 0.25rem;
+}
+
+/* CTA band */
+.cta-band {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Contact */
+.contact-details {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
 .contact-form {
   display: grid;
   gap: 1rem;
-  max-width: 28rem;
+  max-width: 32rem;
 }
 
 label {
@@ -192,12 +385,19 @@ textarea {
   border-radius: 0.5rem;
   border: 1px solid #cbd5e1;
   font: inherit;
+  background: var(--color-white);
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
 }
 
 /* Footer */
 .site-footer {
   padding: 1.5rem 0 2rem;
-  background: #ffffff;
+  background: var(--color-surface);
   border-top: 1px solid #e5e7eb;
   font-size: 0.8rem;
   text-align: center;
@@ -205,16 +405,32 @@ textarea {
 
 /* ---------- RESPONSIVE BREAKPOINTS ---------- */
 
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+  }
+
+  .brand-divider {
+    height: 2rem;
+  }
+}
+
 @media (min-width: 768px) {
   .hero {
     padding: 4rem 0 3.5rem;
   }
 
-  .hero-inner h1 {
-    font-size: 2rem;
+  .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .services-grid {
+  .packages-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -228,8 +444,8 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-  .hero-inner h1 {
-    font-size: 2.3rem;
+  .hero {
+    padding-top: 4.5rem;
   }
 
   .section {
