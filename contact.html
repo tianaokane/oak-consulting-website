@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" sizes="any" type="image/png" href="assets/favicon/transparent-red-favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
+
+  <meta charset="UTF-8" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Contact Us | Oak Consultancy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Oak Consultancy to discuss funding support, strategic planning or tender management for your organisation.">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <img 
+            src="assets/logo/horizontal-red-leaf.png" 
+            alt="" 
+            class="brand-leaf"
+          >
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Oak Consultancy</span>
+          <span class="brand-tagline">Opportunities, Access, Know-How</span>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="who-we-help.html">Who we help</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="contact-hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 id="contact-hero-title">Get in touch</h1>
+          <p class="intro-text">
+            Whether you’re exploring funding options, planning ahead or responding to new opportunities, we’re happy to talk through the next steps.
+            A free 30-minute consultation is the easiest place to start.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact details -->
+    <section class="section" aria-labelledby="contact-details-title">
+      <div class="container">
+        <h2 id="contact-details-title">Contact details</h2>
+        <p class="section-intro">
+          You can contact either member of the Oak Consultancy team directly, or use the message form below.
+        </p>
+
+        <div class="contact-details">
+          <p><strong>Columba:</strong> 07843 956546 · <a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+          <p><strong>Karen:</strong> 07515 098543 · <a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message form -->
+    <section class="section" aria-labelledby="message-form-title">
+      <div class="container">
+        <h2 id="message-form-title">Send us a message</h2>
+        <p class="section-intro">
+          Tell us a little about your organisation and what you’d like support with. We’ll get back to you as soon as possible.
+        </p>
+
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+
+          <label>
+            Organisation (optional)
+            <input type="text" name="organisation" autocomplete="organization">
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit" class="btn-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Before you get in touch -->
+    <section class="section" aria-labelledby="before-contact-title">
+      <div class="container">
+        <div class="card">
+          <h2 id="before-contact-title">Before you get in touch</h2>
+          <p class="section-intro">A few quick notes that may be helpful:</p>
+
+          <ul>
+            <li>Most enquiries begin with a short call to understand your needs and priorities.</li>
+            <li>If you already have a deadline for a bid or tender, please mention it in your message.</li>
+            <li>You don’t need a fully formed project idea — we can help shape this with you.</li>
+            <li>We work with organisations of all sizes, including volunteer-run groups.</li>
+          </ul>
+
+          <p>If you're not sure whether Oak Consultancy is the right fit, feel free to ask — we’re always honest about what’s realistic.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="section cta-band" aria-label="Consultation call-to-action">
+      <div class="container">
+        <div class="card cta-card">
+          <h3>Ready to arrange a call?</h3>
+          <p>
+            A free 30-minute conversation is the best starting point. Tell us about your organisation and we’ll guide you from there.
+          </p>
+          <a href="#message-form-title" class="btn-primary">Send a message</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © <span id="year"></span> Oak Consultancy. All rights reserved.
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

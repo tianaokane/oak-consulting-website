@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Favicon -->
   <link rel="icon" sizes="any" type="image/png" href="assets/favicon/transparent-red-favicon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
 
   <meta charset="UTF-8" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <title>Oak Consultancy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Oak Consultancy helps charities, community groups and small businesses to find funding, plan strategically and manage tenders with confidence.">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body id="top">
+  <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
@@ -38,10 +38,10 @@
 
       <nav class="nav" aria-label="Main navigation">
         <a href="#top">Home</a>
-        <a href="#services">Services</a>
-        <a href="#who-we-help">Who we help</a>
-        <a href="#packages">Packages</a>
-        <a href="#contact">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="who-we-help.html">Who we help</a>
+        <a href="packages.html">Packages</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
@@ -66,7 +66,7 @@
 
           <div class="hero-actions">
             <a href="#contact" class="btn-primary">Book a consultation</a>
-            <a href="#services" class="btn-link">Explore our services</a>
+            <a href="services.html" class="btn-link">Explore our services</a>
           </div>
         </div>
       </div>
@@ -88,10 +88,10 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="services" aria-labelledby="services-title">
+    <!-- Services overview (teaser) -->
+    <section class="section" aria-labelledby="services-overview-title">
       <div class="container">
-        <h2 id="services-title">Our Services</h2>
+        <h2 id="services-overview-title">How we can help</h2>
         <p class="section-intro">
           We focus on three core areas where the right support can unlock funding and long-term impact.
         </p>
@@ -100,107 +100,87 @@
           <article class="card">
             <h3>Bid Writing</h3>
             <p>
-              From smaller grants to larger, more complex bids, we help you identify suitable opportunities
-              and prepare strong, clear applications tailored to funders’ requirements.
+              We identify suitable funding opportunities and prepare clear, compelling applications that
+              speak funders’ language.
             </p>
             <p class="card-tagline">
-              Available as a monthly subscription or one-off projects.
+              From small grants to larger, more complex bids.
+            </p>
+            <p>
+              <a href="services.html#bid-writing" class="btn-link">Learn more →</a>
             </p>
           </article>
 
           <article class="card">
             <h3>Strategic Planning</h3>
             <p>
-              We work with you to develop realistic, achievable plans for your organisation or project,
-              then align funding opportunities to help turn your plans into reality.
+              We work with you to develop realistic, achievable plans and align funding to help turn your
+              priorities into action.
             </p>
             <p class="card-tagline">
               Ideal for boards, committees and growing organisations.
+            </p>
+            <p>
+              <a href="services.html#strategic-planning" class="btn-link">Learn more →</a>
             </p>
           </article>
 
           <article class="card">
             <h3>Tender Management</h3>
             <p>
-              We monitor relevant tenders, highlight opportunities and support you to prepare and submit
+              We scan relevant tenders, highlight the right opportunities and support you to submit
               complete, compliant responses on time.
             </p>
             <p class="card-tagline">
               Helping you stay on top of e-tenders and local opportunities.
             </p>
+            <p>
+              <a href="services.html#tender-management" class="btn-link">Learn more →</a>
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Who we help -->
-    <section class="section" id="who-we-help" aria-labelledby="who-title">
+    <!-- Who we help (preview) -->
+    <section class="section" aria-labelledby="who-preview-title">
       <div class="container">
-        <h2 id="who-title">Who We Help</h2>
+        <h2 id="who-preview-title">Who we help</h2>
         <p class="section-intro">
-          Oak Consultancy works with a wide range of organisations who are making a difference in their communities.
+          Oak Consultancy supports organisations that are making a difference in their communities and
+          need practical, down-to-earth support.
         </p>
+
         <div class="who-we-help">
           <ul>
             <li>Charities</li>
-            <li>Small businesses</li>
             <li>Community groups</li>
-            <li>Sports clubs</li>
-          </ul>
-          <ul>
             <li>Schools &amp; PTAs</li>
-            <li>Churches</li>
-            <li>Social enterprises</li>
-            <li>Community Interest Companies</li>
+            <li>Sports clubs</li>
+            <li>Small businesses</li>
+            <li>Social enterprises &amp; CICs</li>
           </ul>
         </div>
+
+        <p>
+          <a href="who-we-help.html" class="btn-link">See all sectors we work with →</a>
+        </p>
       </div>
     </section>
 
-    <!-- Packages -->
-    <section class="section" id="packages" aria-labelledby="packages-title">
+    <!-- Pricing teaser -->
+    <section class="section" aria-labelledby="pricing-teaser-title">
       <div class="container">
-        <h2 id="packages-title">Our Packages</h2>
+        <h2 id="pricing-teaser-title">Flexible support, clear pricing</h2>
         <p class="section-intro">
-          Choose the level of support that fits your organisation. All packages start with an initial
-          conversation to understand your needs and context.
+          Whether you need light-touch guidance or a fully managed service, our support packages are
+          designed to fit different sizes and stages of organisation.
         </p>
-
-        <div class="packages-grid">
-          <article class="package-card">
-            <h3 class="package-tier">Basic</h3>
-            <p class="package-price">£50 <span>/ month</span></p>
-            <ul>
-              <li>Initial assessment of your organisation’s funding needs</li>
-              <li>Needs reviewed twice per year</li>
-              <li>Funding alert service for suitable opportunities</li>
-              <li>Option for Oak Consultancy to complete applications at an agreed hourly rate</li>
-            </ul>
-          </article>
-
-          <article class="package-card">
-            <h3 class="package-tier">Standard</h3>
-            <p class="package-price">£285 <span>/ month</span></p>
-            <ul>
-              <li>Up to 100 hours of consultancy support across 12 months</li>
-              <li>Initial consultation plus quarterly review meetings</li>
-              <li>Funding identification and alerts</li>
-              <li>Writing and submission of applications on your behalf</li>
-              <li>Support with monitoring and evaluation for funded projects</li>
-            </ul>
-          </article>
-
-          <article class="package-card">
-            <h3 class="package-tier">Premium</h3>
-            <p class="package-price">£350 <span>/ month</span></p>
-            <ul>
-              <li>Everything in the Standard package</li>
-              <li>120 consultancy hours per year</li>
-              <li>Monthly written update for your board or committee</li>
-              <li>Attendance at your AGM to report on grants and fundraising performance</li>
-            </ul>
-          </article>
-        </div>
+        <p>
+          <strong>Packages start from £50 per month.</strong>
+          <br>
+          <a href="packages.html" class="btn-link">View packages and what’s included →</a>
+        </p>
       </div>
     </section>
 
@@ -255,6 +235,7 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <small>
