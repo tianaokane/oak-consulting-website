@@ -36,6 +36,13 @@
         </div>
       </div>
 
+        <!--Mobile toggle button -->
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav class="nav" aria-label="Main navigation">
         <a href="#top">Home</a>
         <a href="services.html">Services</a>
@@ -246,7 +253,33 @@
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  // Footer year
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      const nextState = !isOpen;
+
+      navToggle.setAttribute('aria-expanded', String(nextState));
+      document.body.classList.toggle('nav-open', nextState);
+    });
+
+    // Close menu when a link is clicked (nice UX)
+    nav.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      }
+    });
+  }
+</script>
 </body>
 </html>
