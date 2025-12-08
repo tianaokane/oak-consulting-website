@@ -124,9 +124,15 @@ ul {
 
 /* Brand block */
 .brand-leaf {
-  height: 120px;      /* adjust between 24–36px depending on taste */
+  height: 120px;
   width: auto;
   display: block;
+}
+
+@media (max-width: 720px) {
+  .brand-leaf {
+    height: 64px;
+  }
 }
 
 .brand-mark {
@@ -176,30 +182,33 @@ ul {
 
 /* Mobile nav toggle (hamburger) */
 .nav-toggle {
-  display: none;              /* shown only on small screens */
-  border: none;
-  background: transparent;
-  padding: 0.35rem;
+  display: none;               /* shown only on small screens via media query */
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface);
+  padding: 0.4rem;
   margin-left: auto;
   cursor: pointer;
+  border-radius: 999px;
 }
 
 .nav-toggle span {
   display: block;
-  width: 20px;
+  width: 24px;
   height: 2px;
   border-radius: 999px;
   background: var(--color-charcoal);
-  transition: transform 150ms ease, opacity 150ms ease;
+  transition: transform 180ms ease, opacity 180ms ease;
+  transform-origin: center;
 }
 
+/* slightly smaller gap so the maths works nicely */
 .nav-toggle span + span {
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
-/* Animate icon when menu is open */
+/* Animate icon when menu is open – top and bottom bars meet in the middle */
 body.nav-open .nav-toggle span:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
 }
 
 body.nav-open .nav-toggle span:nth-child(2) {
@@ -207,7 +216,7 @@ body.nav-open .nav-toggle span:nth-child(2) {
 }
 
 body.nav-open .nav-toggle span:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 /* Hero */
@@ -435,8 +444,6 @@ textarea:focus {
   font-size: 0.8rem;
   text-align: center;
 }
-
-/* ---------- RESPONSIVE BREAKPOINTS ---------- */
 
 /* ---------- RESPONSIVE BREAKPOINTS ---------- */
 
