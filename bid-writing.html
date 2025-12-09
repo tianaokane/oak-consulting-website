@@ -248,15 +248,68 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <small>
-        © <span id="year"></span> Oak Consultancy. All rights reserved.
-      </small>
-    </div>
-  </footer>
+<footer class="site-footer">
+  <div class="container footer-grid">
 
-  <script>
+    <!-- Brand / sectors -->
+    <div class="footer-col footer-brand">
+      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+      <div>
+        <p class="footer-tagline">
+          Practical funding and strategic support for organisations rooted in their communities.
+        </p>
+        <p class="footer-micro-label">We regularly work with:</p>
+        <p class="footer-micro-list">
+          Charities · Community groups · Schools · Sports clubs · Social enterprises
+        </p>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="footer-col">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="who-we-help.html">Who we help</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div class="footer-col">
+      <h4>Our services</h4>
+      <ul>
+        <li><a href="bid-writing.html">Bid Writing</a></li>
+        <li><a href="strategic-planning.html">Strategic Planning</a></li>
+        <li><a href="tender-management.html">Tender Management</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col footer-contact">
+      <h4>Get in touch</h4>
+      <p><strong>Columba:</strong> 07843 956546</p>
+      <p><strong>Karen:</strong> 07515 098543</p>
+      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+    </div>
+
+  </div>
+
+  <!-- Legal strip -->
+  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+    <small>
+      <a href="privacy-policy.html">Privacy Policy</a> ·
+      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+    </small>
+  </div>
+</footer>
+
+
+<script>
   // Footer year
   const yearEl = document.getElementById('year');
   if (yearEl) {
@@ -276,7 +329,7 @@
       document.body.classList.toggle('nav-open', nextState);
     });
 
-    // Close menu when a link is clicked (nice UX)
+    // Close menu when a nav link is clicked
     nav.addEventListener('click', (event) => {
       if (event.target.tagName === 'A') {
         navToggle.setAttribute('aria-expanded', 'false');
@@ -284,6 +337,29 @@
       }
     });
   }
+
+  // Scroll reveal for elements with .reveal-on-scroll
+  const revealEls = document.querySelectorAll('.reveal-on-scroll');
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target); // only animate once
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    // Fallback: just show them
+    revealEls.forEach((el) => el.classList.add('is-visible'));
+  }
 </script>
+
 </body>
 </html>
