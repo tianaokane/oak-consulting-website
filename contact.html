@@ -54,30 +54,71 @@
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero" aria-labelledby="contact-hero-title">
+    <!-- Hero with terra-tinted gradient -->
+    <section class="hero hero--contact-gradient reveal-on-scroll" aria-labelledby="contact-hero-title">
       <div class="container hero-inner">
         <div class="hero-content">
-          <h1 id="contact-hero-title">Get in touch</h1>
+          <h1 id="contact-hero-title">Let’s talk about what you’re trying to achieve.</h1>
           <p class="intro-text">
             Whether you’re exploring funding options, planning ahead or responding to new opportunities, we’re happy to talk through the next steps.
             A free 30-minute consultation is the easiest place to start.
           </p>
+          <div class="hero-actions">
+            <a href="#message-form-title" class="btn-primary">Send a message</a>
+            <a href="#contact-options" class="btn-link">See ways to get in touch →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact details -->
-    <section class="section" aria-labelledby="contact-details-title">
+    <!-- Contact cards (call / email / bookings) -->
+    <section class="section" aria-labelledby="contact-options-title" id="contact-options">
       <div class="container">
-        <h2 id="contact-details-title">Contact details</h2>
+        <h2 id="contact-options-title">How you can contact us</h2>
         <p class="section-intro">
-          You can contact either member of the Oak Consultancy team directly, or use the message form below.
+          Choose the option that works best for you. There’s no obligation — just a conversation about what you need.
         </p>
 
-        <div class="contact-details">
-          <p><strong>Columba:</strong> 07843 956546 · <a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-          <p><strong>Karen:</strong> 07515 098543 · <a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+        <div class="contact-card-grid reveal-on-scroll">
+          <!-- Card 1: Call us -->
+          <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📞</div>
+            <h3>Call us</h3>
+            <p>Sometimes the quickest way is simply to talk things through on the phone.</p>
+            <ul class="contact-card-list">
+              <li><strong>Columba:</strong> <a href="tel:+447843956546">07843&nbsp;956546</a></li>
+              <li><strong>Karen:</strong> <a href="tel:+447515098543">07515&nbsp;098543</a></li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Email us -->
+          <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">✉️</div>
+            <h3>Email us</h3>
+            <p>Share a bit of background and any deadlines, and we’ll follow up with some practical options.</p>
+            <ul class="contact-card-list">
+              <li><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></li>
+              <li><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></li>
+            </ul>
+          </article>
+
+          <!-- Card 3: Book a short call -->
+          <article class="contact-card">
+            <div class="contact-card-icon" aria-hidden="true">📅</div>
+            <h3>Book a short call</h3>
+            <p>Pick a slot that suits you for a free 30-minute conversation about your organisation.</p>
+            <a 
+              href="https://bookings.microsoft.com/" 
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Microsoft Bookings
+            </a>
+            <p class="contact-card-footnote">
+              (If no slots work, just email us and we’ll find a time.)
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -85,34 +126,121 @@
     <!-- Message form -->
     <section class="section" aria-labelledby="message-form-title">
       <div class="container">
-        <h2 id="message-form-title">Send us a message</h2>
+        <div class="contact-layout">
+          <div class="contact-layout-main">
+            <h2 id="message-form-title">Send us a message</h2>
+            <p class="section-intro">
+              Tell us a little about your organisation and what you’d like support with. We’ll get back to you as soon as possible.
+            </p>
+
+            <form class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required>
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required>
+              </label>
+
+              <label>
+                Organisation (optional)
+                <input type="text" name="organisation" autocomplete="organization">
+              </label>
+
+              <fieldset class="contact-services">
+                <legend>What would you like help with? <span>(optional)</span></legend>
+                <div class="contact-services-grid">
+                  <label class="contact-services-option">
+                    <input type="checkbox" name="services" value="bid-writing">
+                    Bid writing
+                  </label>
+                  <label class="contact-services-option">
+                    <input type="checkbox" name="services" value="strategic-planning">
+                    Strategic planning
+                  </label>
+                  <label class="contact-services-option">
+                    <input type="checkbox" name="services" value="tender-management">
+                    Tender management
+                  </label>
+                  <label class="contact-services-option">
+                    <input type="checkbox" name="services" value="unsure">
+                    I’m not sure yet
+                  </label>
+                </div>
+              </fieldset>
+
+              <label>
+                Message
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+
+              <button type="submit" class="btn-primary">Send message</button>
+              <p class="form-reassurance">
+                We usually reply within 1–2 working days. Your message goes directly to the team — not into a marketing list.
+              </p>
+            </form>
+          </div>
+
+          <!-- Optional side note (no photos yet, but human touch) -->
+          <aside class="contact-note">
+            <div class="card contact-note-card">
+              <h3>Who will you be speaking to?</h3>
+              <p>
+                Your first conversation will usually be with Columba or Karen. They’ll ask a few simple questions about your organisation, any deadlines and what you’re hoping to achieve.
+              </p>
+              <p>
+                You don’t need a fully formed project idea — part of the call is to help shape your thoughts into something realistic and fundable.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials carousel -->
+    <section class="section section--soft-bg" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title">What organisations say after working with Oak Consultancy</h2>
         <p class="section-intro">
-          Tell us a little about your organisation and what you’d like support with. We’ll get back to you as soon as possible.
+          The examples below are representative of feedback from community organisations, schools and clubs we’ve supported.
         </p>
 
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" required>
-          </label>
+        <div class="testimonial-carousel reveal-on-scroll" aria-live="polite">
+          <figure class="testimonial-slide is-active" data-testimonial>
+            <blockquote>
+              “Having Oak Consultancy alongside us took the panic out of funding. We now have a clear plan instead of chasing random grants.”
+            </blockquote>
+            <figcaption>
+              Community centre manager, Belfast
+            </figcaption>
+          </figure>
 
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" required>
-          </label>
+          <figure class="testimonial-slide" data-testimonial>
+            <blockquote>
+              “They helped us translate what we do with young people into language funders understood, without losing what makes it ‘us’.”
+            </blockquote>
+            <figcaption>
+              Volunteer coach, grassroots sports club
+            </figcaption>
+          </figure>
 
-          <label>
-            Organisation (optional)
-            <input type="text" name="organisation" autocomplete="organization">
-          </label>
+          <figure class="testimonial-slide" data-testimonial>
+            <blockquote>
+              “We felt listened to and never pushed into bids that didn’t feel realistic. The honest advice was just as valuable as the successful applications.”
+            </blockquote>
+            <figcaption>
+              Chair of trustees, local charity
+            </figcaption>
+          </figure>
 
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-
-          <button type="submit" class="btn-primary">Send message</button>
-        </form>
+          <div class="testimonial-dots" role="tablist" aria-label="Testimonials">
+            <button class="testimonial-dot is-active" type="button" data-testimonial-dot="0" aria-label="Show testimonial 1"></button>
+            <button class="testimonial-dot" type="button" data-testimonial-dot="1" aria-label="Show testimonial 2"></button>
+            <button class="testimonial-dot" type="button" data-testimonial-dot="2" aria-label="Show testimonial 3"></button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -150,119 +278,146 @@
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
+  </footer>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-  </div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
-</footer>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Scroll reveal for elements with .reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal-on-scroll');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target); // only animate once
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: just show them
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
 
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
+    // Simple testimonials carousel
+    const testimonialSlides = document.querySelectorAll('[data-testimonial]');
+    const testimonialDots = document.querySelectorAll('[data-testimonial-dot]');
+    let testimonialIndex = 0;
+
+    function showTestimonial(index) {
+      testimonialSlides.forEach((slide, i) => {
+        slide.classList.toggle('is-active', i === index);
+      });
+      testimonialDots.forEach((dot, i) => {
+        dot.classList.toggle('is-active', i === index);
+      });
+      testimonialIndex = index;
+    }
+
+    testimonialDots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        const idx = Number(dot.getAttribute('data-testimonial-dot'));
+        showTestimonial(idx);
+      });
     });
 
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
-
+    if (testimonialSlides.length > 1) {
+      setInterval(() => {
+        const nextIndex = (testimonialIndex + 1) % testimonialSlides.length;
+        showTestimonial(nextIndex);
+      }, 9000);
+    }
+  </script>
 </body>
 </html>
