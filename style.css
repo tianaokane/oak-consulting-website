@@ -465,6 +465,20 @@ textarea:focus {
   text-align: center;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
 /* ---------- RESPONSIVE BREAKPOINTS ---------- */
 
 @media (max-width: 720px) {
@@ -529,4 +543,62 @@ textarea:focus {
   .section {
     padding: 3rem 0;
   }
+}
+
+/* ------------------ 404 PAGE ------------------ */
+
+.error-page {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.error-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.error-title {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.error-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-charcoal);
+}
+
+.error-text {
+  font-size: 1rem;
+  color: var(--color-text-main);
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--color-terra-dark);
+}
+
+/* Make 404 page nicely centred on screen */
+.error-page {
+  min-height: calc(100vh - 200px); /* Adjust 200 if needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
 }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Not Found | Oak Consultancy</title>
+
+  <link rel="icon" sizes="any" type="image/png" href="assets/favicon/transparent-red-favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <img 
+          src="assets/logo/horizontal-red-leaf.png" 
+          alt="" 
+          class="brand-leaf"
+        >
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Oak Consultancy</span>
+        <span class="brand-tagline">Opportunities, Access, Know-How</span>
+      </div>
+    </div>
+
+    <!-- Mobile toggle button -->
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Nav -->
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="who-we-help.html">Who we help</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="error-page">
+  <div class="container error-container">
+    <h1 class="error-title">404</h1>
+    <p class="error-subtitle">We can’t seem to find the page you’re looking for.</p>
+    <p class="error-text">It may have moved, been renamed, or no longer exists. Let’s get you back on track.</p>
+
+    <a href="index.html" class="btn-primary">Return to Home</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Oak Consultancy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Footer year
+  const yearEl = document.getElementById('year');
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      const nextState = !isOpen;
+
+      navToggle.setAttribute('aria-expanded', String(nextState));
+      document.body.classList.toggle('nav-open', nextState);
+    });
+
+    // Close menu when a link is clicked
+    nav.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
