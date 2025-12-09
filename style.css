@@ -182,31 +182,51 @@ ul {
 
 /* Mobile nav toggle (hamburger) */
 .nav-toggle {
-  display: none;               /* shown only on small screens via media query */
+  display: none;
   border: 1px solid var(--color-border-subtle);
   background: var(--color-surface);
-  padding: 0.4rem;
+  padding: 0.3rem 0.5rem;
   margin-left: auto;
   cursor: pointer;
   border-radius: 999px;
+  display: none; /* will be switched on in the @media rule */
+  align-items: center;
+  justify-content: center;
 }
 
+/* Mobile nav toggle (hamburger) */
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface);
+  padding: 0;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 999px;
+  align-items: center;
+  justify-content: center;
+  position: relative;      /* NEW: so the spans can be absolutely positioned */
+  width: 32px;
+  height: 24px;
+}
+
+/* Three bars, absolutely positioned so we control exact spacing */
 .nav-toggle span {
-  display: block;
-  width: 24px;
+  position: absolute;
+  left: 6px;
+  right: 6px;
   height: 2px;
   border-radius: 999px;
   background: var(--color-charcoal);
   transition: transform 180ms ease, opacity 180ms ease;
-  transform-origin: center;
 }
 
-/* slightly smaller gap so the maths works nicely */
-.nav-toggle span + span {
-  margin-top: 3px;
-}
+/* Top, middle, bottom bar positions */
+.nav-toggle span:nth-child(1) { top: 6px; }
+.nav-toggle span:nth-child(2) { top: 11px; }
+.nav-toggle span:nth-child(3) { top: 16px; }
 
-/* Animate icon when menu is open – top and bottom bars meet in the middle */
+/* Animate icon when menu is open – bars meet exactly in the middle */
 body.nav-open .nav-toggle span:nth-child(1) {
   transform: translateY(5px) rotate(45deg);
 }
