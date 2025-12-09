@@ -1323,18 +1323,49 @@ html {
 /* ------------------ 404 PAGE ------------------ */
 
 .error-page {
-  padding: 6rem 0;
+  min-height: calc(100vh - 220px); /* adjust if footer height changes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem;
   text-align: center;
 }
 
+/* wrapper that gets the soft terra shape */
+.error-page--shape {
+  position: relative;
+  overflow: hidden;
+}
+
+/* BIGGER, FULLER SHAPE BEHIND THE CONTENT */
+.error-page--shape::before {
+  content: "";
+  position: absolute;
+  inset: -30%; /* extends past all edges */
+  background:
+    radial-gradient(
+      circle at 50% 10%,
+      rgba(186, 71, 52, 0.23),
+      rgba(186, 71, 52, 0.12) 28%,
+      rgba(186, 71, 52, 0.05) 55%,
+      transparent 80%
+    );
+  filter: blur(32px);
+  z-index: 0;
+}
+
+/* content sits above the shape */
 .error-container {
+  position: relative;
+  z-index: 1;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .error-title {
   font-family: var(--font-heading);
-  font-size: 6rem;
+  font-size: 6.5rem;
+  letter-spacing: 0.03em;
   font-weight: 700;
   color: var(--color-primary);
   margin-bottom: 1rem;
@@ -1352,6 +1383,12 @@ html {
   color: var(--color-text-main);
   margin-bottom: 2rem;
 }
+
+/* Remove extra gap before footer on 404 page */
+.error-page + .site-footer {
+  margin-top: 0;
+}
+
 
 .btn-primary {
   display: inline-block;
