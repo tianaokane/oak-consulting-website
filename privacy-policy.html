@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body id="top" class="page-privacy bg-lines">
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -55,206 +55,240 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero" aria-labelledby="privacy-title">
+    <section class="hero hero--policy reveal-on-scroll" aria-labelledby="privacy-title">
       <div class="container hero-inner">
         <div class="hero-content">
+          <p class="policy-eyebrow">Privacy &amp; data</p>
           <h1 id="privacy-title">Privacy Policy</h1>
           <p class="intro-text">
             This Privacy Policy explains how Oak Consultancy collects, uses and protects personal information. 
             We are committed to respecting your privacy and handling your data in a clear and transparent way.
           </p>
-          <p class="intro-text">
-            Last updated: 9 December 2025
+          <p class="policy-meta">
+            <strong>Last updated:</strong> 9 December 2025
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Who we are -->
-    <section class="section" aria-labelledby="privacy-who-title">
+    <!-- At-a-glance summary -->
+    <section class="section policy-summary" aria-label="Privacy policy summary">
       <div class="container">
-        <div class="card">
-          <h2 id="privacy-who-title">Who we are</h2>
-          <p class="section-intro">
-            Oak Consultancy provides funding, bid writing and strategic planning support to charities, community groups,
-            schools, sports clubs and small businesses.
-          </p>
-          <p>
-            For the purposes of data protection law, Oak Consultancy is the “data controller” of the personal information 
-            described in this notice. If you have any questions about this policy, you can contact us at:
-          </p>
-          <p>
-            <strong>Email:</strong> <a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a> / 
-            <a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a><br>
-            <strong>Phone:</strong> 07843 956546 (Columba) / 07515 098543 (Karen)
-          </p>
+        <div class="card policy-summary-card reveal-on-scroll">
+          <h2 class="policy-summary-title">In short, here’s what this policy covers</h2>
+          <div class="policy-summary-grid">
+            <div class="policy-summary-item">
+              <h3>What we collect</h3>
+              <p>
+                Basic contact details, project information and administrative details you share when you work with Oak Consultancy.
+              </p>
+            </div>
+            <div class="policy-summary-item">
+              <h3>How we use it</h3>
+              <p>
+                To respond to enquiries, provide our services, manage contracts and keep straightforward records of organisations we support.
+              </p>
+            </div>
+            <div class="policy-summary-item">
+              <h3>Your choices</h3>
+              <p>
+                You can ask to see, correct or delete your information, or object to how it’s used, in line with UK data protection law.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- What information we collect -->
-    <section class="section" aria-labelledby="privacy-collect-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="privacy-collect-title">What information we collect</h2>
-          <p class="section-intro">
-            The information we collect depends on how you choose to engage with us. It may include:
-          </p>
-          <ul>
-            <li><strong>Contact details</strong> such as your name, email address, phone number and the organisation you represent.</li>
-            <li><strong>Project information</strong> that you share with us when we discuss your organisation, funding needs or plans.</li>
-            <li><strong>Website enquiries</strong> – information you submit through our contact form or by emailing us directly.</li>
-            <li><strong>Administrative and billing information</strong> where we are working with you under a contract.</li>
-          </ul>
-          <p>
-            We do not intentionally collect sensitive personal data (such as health information) through this website. 
-            If such information is relevant to a piece of work, we will discuss how it is handled with you separately.
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- Main policy layout -->
+    <section class="section" aria-label="Privacy policy details">
+      <div class="container policy-layout">
+        <!-- Sidebar -->
+        <aside class="policy-sidebar">
+          <div class="card policy-sidebar-card reveal-on-scroll">
+            <h2>On this page</h2>
+            <p>Jump to the part you’re interested in:</p>
+            <ul class="policy-toc">
+              <li><a href="#privacy-who">Who we are</a></li>
+              <li><a href="#privacy-collect">What information we collect</a></li>
+              <li><a href="#privacy-use">How we use your information</a></li>
+              <li><a href="#privacy-store">How we store and share your information</a></li>
+              <li><a href="#privacy-rights">Your rights</a></li>
+              <li><a href="#privacy-changes">Changes to this policy</a></li>
+            </ul>
+            <p class="policy-sidebar-note">
+              If anything here isn’t clear, you’re always welcome to contact us and we’ll explain it in plain language.
+            </p>
+          </div>
+        </aside>
 
-    <!-- How we use your information -->
-    <section class="section" aria-labelledby="privacy-use-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="privacy-use-title">How we use your information</h2>
-          <p class="section-intro">
-            We use personal information only where we have a lawful basis to do so, including:
-          </p>
-          <ul>
-            <li>To respond to enquiries and provide information about our services.</li>
-            <li>To deliver consultancy services you have requested and manage our relationship with you.</li>
-            <li>To issue invoices and maintain our financial records.</li>
-            <li>To keep basic records of organisations we work with for reference and planning.</li>
-          </ul>
-          <p>
-            We do not sell your personal data to anyone and we do not use it for large-scale marketing campaigns.
-          </p>
-        </div>
-      </div>
-    </section>
+        <!-- Main content -->
+        <div class="policy-main">
+          <!-- Who we are -->
+          <article id="privacy-who" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-who-title">
+            <h2 id="privacy-who-title">Who we are</h2>
+            <p class="section-intro">
+              Oak Consultancy provides funding, bid writing and strategic planning support to charities, community groups,
+              schools, sports clubs and small businesses.
+            </p>
+            <p>
+              For the purposes of data protection law, Oak Consultancy is the “data controller” of the personal information 
+              described in this notice. If you have any questions about this policy, you can contact us at:
+            </p>
+            <p>
+              <strong>Email:</strong> 
+              <a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a> / 
+              <a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a><br>
+              <strong>Phone:</strong> 07843 956546 (Columba) / 07515 098543 (Karen)
+            </p>
+          </article>
 
-    <!-- Sharing & storage -->
-    <section class="section" aria-labelledby="privacy-share-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="privacy-share-title">How we store and share your information</h2>
-          <ul>
-            <li>
-              <strong>Storage:</strong> We store information in secure email, document and accounting systems. We keep
-              information only for as long as it is reasonably needed for the purposes described in this policy.
-            </li>
-            <li>
-              <strong>Sharing:</strong> We may share limited personal information with trusted third parties who support 
-              our work (for example, IT or accounting providers), but only where this is necessary and subject to appropriate safeguards.
-            </li>
-            <li>
-              <strong>Legal requirements:</strong> We may disclose information if required to do so by law or to protect 
-              our legal rights.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          <!-- What information we collect -->
+          <article id="privacy-collect" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-collect-title">
+            <h2 id="privacy-collect-title">What information we collect</h2>
+            <p class="section-intro">
+              The information we collect depends on how you choose to engage with us. It may include:
+            </p>
+            <ul>
+              <li><strong>Contact details</strong> such as your name, email address, phone number and the organisation you represent.</li>
+              <li><strong>Project information</strong> that you share with us when we discuss your organisation, funding needs or plans.</li>
+              <li><strong>Website enquiries</strong> – information you submit through our contact form or by emailing us directly.</li>
+              <li><strong>Administrative and billing information</strong> where we are working with you under a contract.</li>
+            </ul>
+            <p>
+              We do not intentionally collect sensitive personal data (such as health information) through this website. 
+              If such information is relevant to a piece of work, we will discuss how it is handled with you separately.
+            </p>
+          </article>
 
-    <!-- Your rights -->
-    <section class="section" aria-labelledby="privacy-rights-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="privacy-rights-title">Your rights</h2>
-          <p class="section-intro">
-            Under UK data protection law, you have a number of rights in relation to your personal information, including the right to:
-          </p>
-          <ul>
-            <li>Ask for a copy of the personal data we hold about you.</li>
-            <li>Ask us to correct any inaccurate or incomplete information.</li>
-            <li>Ask us to delete certain information, or to restrict how it is used, in some circumstances.</li>
-            <li>Object to our use of your information in some situations.</li>
-          </ul>
-          <p>
-            If you would like to exercise any of these rights, please contact us using the details above. We may need to 
-            verify your identity before responding to your request.
-          </p>
-        </div>
-      </div>
-    </section>
+          <!-- How we use your information -->
+          <article id="privacy-use" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-use-title">
+            <h2 id="privacy-use-title">How we use your information</h2>
+            <p class="section-intro">
+              We use personal information only where we have a lawful basis to do so, including:
+            </p>
+            <ul>
+              <li>To respond to enquiries and provide information about our services.</li>
+              <li>To deliver consultancy services you have requested and manage our relationship with you.</li>
+              <li>To issue invoices and maintain our financial records.</li>
+              <li>To keep basic records of organisations we work with for reference and planning.</li>
+            </ul>
+            <p>
+              We do not sell your personal data to anyone and we do not use it for large-scale marketing campaigns.
+            </p>
+          </article>
 
-    <!-- Changes -->
-    <section class="section" aria-labelledby="privacy-changes-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="privacy-changes-title">Changes to this policy</h2>
-          <p>
-            We may update this Privacy Policy from time to time to reflect changes in our services or legal obligations. 
-            The latest version will always be available on this page, and we will update the “Last updated” date at the top.
-          </p>
+          <!-- Storage & sharing -->
+          <article id="privacy-store" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-share-title">
+            <h2 id="privacy-share-title">How we store and share your information</h2>
+            <ul>
+              <li>
+                <strong>Storage:</strong> We store information in secure email, document and accounting systems. We keep
+                information only for as long as it is reasonably needed for the purposes described in this policy.
+              </li>
+              <li>
+                <strong>Sharing:</strong> We may share limited personal information with trusted third parties who support 
+                our work (for example, IT or accounting providers), but only where this is necessary and subject to appropriate safeguards.
+              </li>
+              <li>
+                <strong>Legal requirements:</strong> We may disclose information if required to do so by law or to protect 
+                our legal rights.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Your rights -->
+          <article id="privacy-rights" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-rights-title">
+            <h2 id="privacy-rights-title">Your rights</h2>
+            <p class="section-intro">
+              Under UK data protection law, you have a number of rights in relation to your personal information, including the right to:
+            </p>
+            <ul>
+              <li>Ask for a copy of the personal data we hold about you.</li>
+              <li>Ask us to correct any inaccurate or incomplete information.</li>
+              <li>Ask us to delete certain information, or to restrict how it is used, in some circumstances.</li>
+              <li>Object to our use of your information in some situations.</li>
+            </ul>
+            <p>
+              If you would like to exercise any of these rights, please contact us using the details above. We may need to 
+              verify your identity before responding to your request.
+            </p>
+          </article>
+
+          <!-- Changes -->
+          <article id="privacy-changes" class="card policy-card reveal-on-scroll" aria-labelledby="privacy-changes-title">
+            <h2 id="privacy-changes-title">Changes to this policy</h2>
+            <p>
+              We may update this Privacy Policy from time to time to reflect changes in our services or legal obligations. 
+              The latest version will always be available on this page, and we will update the “Last updated” date at the top.
+            </p>
+          </article>
         </div>
       </div>
     </section>
   </main>
 
-   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
-
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
-
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
-
-  </div>
-
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
-</footer>
+  </footer>
 
   <script>
     const yearEl = document.getElementById('year');
