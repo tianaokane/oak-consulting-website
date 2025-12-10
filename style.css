@@ -854,6 +854,104 @@ main {
   }
 }
 
+/* Animated soft gradient background (global or per-page) */
+.animated-gradient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background: linear-gradient(-45deg,
+    #ba4734,        /* terra */
+    #8c2e1d,        /* deep terra */
+    #e6d7c9,        /* warm cream */
+    #ba4734         /* terra again */
+  );
+
+  background-size: 300% 300%;
+  animation: oakGradient 18s ease-in-out infinite;
+
+  opacity: 0.75;        /* vivid but still subtle */
+  filter: blur(3px);    /* less blur = smoother, less streaking */
+}
+
+.animated-gradient-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    transparent 40%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
+}
+
+@keyframes oakGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Only on pages with the gradient background */
+.page--gradient {
+  /* Make page background same as hero so there's no visible line */
+  background: var(--color-surface);
+}
+
+/* Keep hero clean, no extra radial overlay */
+.page--gradient .hero {
+  background: var(--color-surface);
+  position: relative;
+  z-index: 1;
+}
+
+/* Kill the old radial hero overlay entirely */
+.page--gradient .hero.hero--service::before {
+  content: none;
+}
+
+/* Optional: slightly glassy cards over moving gradient further down */
+.page--gradient .card {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(2px);
+}
+
+/* Service hero – soft static gradient so it feels special */
+.page--gradient .hero.hero--service {
+  background:
+    radial-gradient(circle at top left,
+      rgba(186, 71, 52, 0.18),
+      transparent 55%
+    ),
+    radial-gradient(circle at bottom right,
+      rgba(140, 46, 29, 0.10),
+      transparent 60%
+    ),
+    var(--color-surface);
+  position: relative;
+  z-index: 1;
+}
+
+/* Gentle fade from hero into the main body to avoid a hard edge */
+.page--gradient .hero.hero--service::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 48px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(248, 245, 240, 1)
+  );
+  z-index: -1;
+}
+
+
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
 /* Smooth scroll for in-page links (e.g. Book a consultation → contact) */

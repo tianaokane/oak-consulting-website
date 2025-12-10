@@ -18,7 +18,8 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body id="top" class="page--gradient">
+  <div class="animated-gradient-bg"></div>
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -55,8 +56,8 @@
 
   <main>
     <!-- Hero -->
-    <section class="hero" aria-labelledby="bid-hero-title">
-      <div class="container hero-inner">
+    <section class="hero hero--service" aria-labelledby="bid-hero-title">
+      <div class="container hero-inner reveal-on-scroll">
         <div class="hero-content">
           <p class="intro-text">
             <a href="services.html" class="btn-link">← Back to Services</a>
@@ -74,7 +75,7 @@
     <!-- Who this is for -->
     <section class="section" aria-labelledby="who-for-title">
       <div class="container">
-        <div class="card">
+        <div class="card reveal-on-scroll">
           <h2 id="who-for-title">Who is our bid writing support for?</h2>
           <p class="section-intro">
             This service is a good fit if you are:
@@ -94,9 +95,9 @@
     </section>
 
     <!-- What’s included -->
-    <section class="section" aria-labelledby="whats-included-title">
+    <section class="section section--tinted-soft" aria-labelledby="whats-included-title">
       <div class="container">
-        <div class="card">
+        <div class="card reveal-on-scroll">
           <h2 id="whats-included-title">What’s included in our bid writing support</h2>
           <p class="section-intro">
             The exact support depends on your package and needs, but typically includes:
@@ -136,36 +137,40 @@
     <!-- How it works (process) -->
     <section class="section" aria-labelledby="process-title">
       <div class="container">
-        <div class="card">
+        <div class="card reveal-on-scroll">
           <h2 id="process-title">How our bid writing process works</h2>
           <p class="section-intro">
             We keep the process straightforward and as light on your time as possible.
           </p>
 
-          <ol>
+          <ol class="process-list">
             <li>
-              <strong>Initial conversation.</strong> We talk through your organisation, current work and what you’d
-              like to fund. You can also share any previous bids and feedback.
+              <strong>Initial conversation.</strong>
+              We talk through your organisation, current work and what you’d like to fund. You can also share
+              any previous bids and feedback.
             </li>
             <li>
-              <strong>Agree focus and priorities.</strong> Together we decide which bid(s) to tackle first, based on
-              deadlines, fit and capacity.
+              <strong>Agree focus and priorities.</strong>
+              Together we decide which bid(s) to tackle first, based on deadlines, fit and capacity.
             </li>
             <li>
-              <strong>Information gathering.</strong> We request key documents and details (e.g. budgets, project
-              ideas, existing reports) so we can write accurately.
+              <strong>Information gathering.</strong>
+              We request key documents and details (e.g. budgets, project ideas, existing reports) so we can
+              write accurately.
             </li>
             <li>
-              <strong>Drafting and review.</strong> Oak Consultancy prepares a draft bid. You review, correct and
-              add detail where needed; we then refine and finalise.
+              <strong>Drafting and review.</strong>
+              Oak Consultancy prepares a draft bid. You review, correct and add detail where needed;
+              we then refine and finalise.
             </li>
             <li>
-              <strong>Submission.</strong> We support you to submit on time, ensuring the application and any
-              attachments are complete and consistent.
+              <strong>Submission.</strong>
+              We support you to submit on time, ensuring the application and any attachments are complete
+              and consistent.
             </li>
             <li>
-              <strong>Learning and follow-up.</strong> Where funders provide feedback, we review it with you and use
-              it to strengthen future bids.
+              <strong>Learning and follow-up.</strong>
+              Where funders provide feedback, we review it with you and use it to strengthen future bids.
             </li>
           </ol>
         </div>
@@ -173,9 +178,9 @@
     </section>
 
     <!-- Working with us (packages) -->
-    <section class="section" aria-labelledby="working-with-us-title">
+    <section class="section section--tinted-soft" aria-labelledby="working-with-us-title">
       <div class="container">
-        <div class="card">
+        <div class="card reveal-on-scroll">
           <h2 id="working-with-us-title">Working with us on bid writing</h2>
           <p class="section-intro">
             Bid writing support can be provided as:
@@ -199,7 +204,7 @@
     <!-- FAQs -->
     <section class="section" aria-labelledby="bid-faq-title">
       <div class="container">
-        <div class="card">
+        <div class="card faq-card faq-section reveal-on-scroll">
           <h2 id="bid-faq-title">Frequently asked questions</h2>
 
           <h3>How far in advance do we need to contact you?</h3>
@@ -235,7 +240,7 @@
     <!-- CTA band -->
     <section class="section cta-band" aria-label="Consultation call-to-action">
       <div class="container">
-        <div class="card cta-card">
+        <div class="card cta-card reveal-on-scroll">
           <h3>Want help with an upcoming bid?</h3>
           <p>
             If you already have a fund or deadline in mind, or you simply want to explore what’s possible, 
@@ -248,119 +253,117 @@
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
+  </footer>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-  </div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
-</footer>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Scroll reveal for elements with .reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal-on-scroll');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target); // only animate once
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
-
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
-    });
-
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
-
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: just show them
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+  </script>
 </body>
 </html>
