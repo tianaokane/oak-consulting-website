@@ -1806,6 +1806,66 @@ padding-bottom: 3rem;
   background-color: var(--color-light);
 }
 
+/* ---------- SERVICES PAGE BACKGROUND (warm neutral noise) ---------- */
+
+.page-services main {
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.05) 0%,
+      rgba(248, 245, 240, 0.9) 30%,
+      rgba(248, 245, 240, 1) 100%
+    );
+}
+
+/* Add subtle noise texture for that boutique consultancy feel */
+.page-services main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("assets/textures/noise.png");
+  opacity: 0.12; /* premium, soft, modern */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Lift all cards and sections above background texture */
+.page-services .section,
+.page-services .card,
+.page-services .hero,
+.page-services .cta-band {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- SOFT RADIAL SPOTLIGHT FOR SERVICES PAGE ---------- */
+
+.page-services main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background:
+    /* Primary spotlight – deeper, more visible */
+    radial-gradient(
+      circle at 50% 12%,     /* pulls the focus higher */
+      rgba(186, 71, 52, 0.22) 0%,   /* stronger terra glow */
+      rgba(248, 245, 240, 0.65) 55%,
+      rgba(248, 245, 240, 1) 90%
+    ),
+
+    /* Secondary vignette – adds depth & richness */
+    radial-gradient(
+      circle at 50% 85%,
+      rgba(186, 71, 52, 0.10) 0%,
+      rgba(248, 245, 240, 1) 70%
+    );
+}
+
+
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
 /* Smooth scroll for in-page links (e.g. Book a consultation → contact) */
