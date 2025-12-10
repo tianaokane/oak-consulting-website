@@ -951,6 +951,167 @@ main {
   z-index: -1;
 }
 
+/* ---------- CASE STUDIES PAGE ---------- */
+
+.page-bg-casestudies {
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.08) 0%,
+      rgba(248, 245, 240, 0.72) 40%,
+      rgba(248, 245, 240, 0.9) 100%
+    ),
+    url("assets/textures/leaves.png");
+  background-size: 2440px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.cs-hero-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+.cs-hero-intro {
+  margin-bottom: 1.5rem;
+}
+
+.cs-hero-quick-links {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: 0.75rem;
+}
+
+.cs-hero-quick-text {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.cs-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Remove the big gap before the footer on the case studies page */
+main.page-bg-casestudies + .site-footer {
+  margin-top: 0;
+}
+
+/* Snapshot band reused from About – just a bit of polish */
+.snapshot-band {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.snapshot-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.snapshot-heading {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.25rem;
+  opacity: 0.85;
+}
+
+.snapshot-metric {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-primary-strong);
+}
+
+.snapshot-copy {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Case layout */
+.cs-key-list {
+  margin-bottom: 1rem;
+}
+
+.cs-case {
+  position: relative;
+}
+
+.cs-case-header {
+  margin-bottom: 1rem;
+}
+
+.cs-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 0.4rem;
+}
+
+.cs-meta-item {
+  display: flex;
+  gap: 0.25rem;
+  align-items: baseline;
+}
+
+.cs-meta-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.cs-columns-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 0.75rem;
+}
+
+.cs-column h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.cs-bullet-list {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.cs-outcome-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.cs-outcome-tag {
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  padding: 0.25rem 0.7rem;
+  font-size: 0.8rem;
+  background: rgba(186, 71, 52, 0.04);
+}
+
+/* Responsive tweaks for case studies */
+@media (min-width: 720px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .cs-columns-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
