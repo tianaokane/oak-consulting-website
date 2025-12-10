@@ -1113,6 +1113,230 @@ main.page-bg-casestudies + .site-footer {
   }
 }
 
+/* ---------- FAQ PAGE ENHANCEMENTS ---------- */
+
+.faq-hero-note {
+margin-top: 0.9rem;
+font-size: 0.95rem;
+opacity: 0.9;
+}
+
+.faq-hero-note a {
+text-decoration: underline;
+font-weight: 500;
+}
+
+/* Layout: sidebar topics + main FAQs */
+.faq-layout {
+display: grid;
+gap: 2rem;
+align-items: flex-start;
+}
+
+.faq-sidebar {
+font-size: 0.9rem;
+}
+
+.faq-sidebar h2 {
+font-size: 0.95rem;
+text-transform: uppercase;
+letter-spacing: 0.16em;
+margin-bottom: 0.75rem;
+opacity: 0.9;
+}
+
+.faq-sidebar p {
+margin-bottom: 0.75rem;
+}
+
+.faq-filter-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.faq-filter-list li + li {
+margin-top: 0.3rem;
+}
+
+.faq-filter-list a {
+text-decoration: none;
+font-weight: 500;
+font-size: 0.9rem;
+opacity: 0.9;
+padding: 0.25rem 0;
+display: inline-flex;
+align-items: center;
+gap: 0.4rem;
+}
+
+.faq-filter-list a::before {
+content: "•";
+font-size: 0.9rem;
+color: var(--color-primary);
+}
+
+.faq-filter-list a:hover {
+opacity: 1;
+color: var(--color-primary-strong);
+}
+
+/* FAQ groups */
+.faq-main {
+display: grid;
+gap: 1.75rem;
+}
+
+.faq-group.card {
+padding: 1.5rem 1.6rem 1.6rem;
+}
+
+.faq-kicker {
+font-size: 0.8rem;
+text-transform: uppercase;
+letter-spacing: 0.16em;
+margin-bottom: 0.25rem;
+opacity: 0.8;
+}
+
+.faq-group h2 {
+margin-bottom: 0.4rem;
+}
+
+.faq-group-intro {
+font-size: 0.95rem;
+margin-bottom: 1rem;
+opacity: 0.95;
+}
+
+/* Reuse accordion styling but tighten spacing for full FAQ page */
+.faq-item + .faq-item {
+border-top: 1px solid var(--color-border-subtle);
+margin-top: 0.4rem;
+padding-top: 0.4rem;
+}
+
+.faq-question {
+width: 100%;
+padding: 0.65rem 0;
+border: none;
+background: none;
+text-align: left;
+font: inherit;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.faq-question span {
+flex: 1;
+padding-right: 0.75rem;
+}
+
+/* Icon on the right */
+.faq-question::after {
+content: '+';
+font-weight: 600;
+margin-left: 0.75rem;
+font-size: 1rem;
+}
+
+.faq-question[aria-expanded="true"]::after {
+content: '–';
+}
+
+.faq-answer {
+font-size: 0.9rem;
+padding: 0 0 0.8rem;
+}
+
+/* Helper / reassurance card */
+.faq-help-card {
+margin-top: 2rem;
+}
+
+.faq-help-card.card {
+background: radial-gradient(circle at 0 0, rgba(186, 71, 52, 0.04), var(--color-surface));
+}
+
+.faq-help-card p {
+margin-bottom: 0.75rem;
+}
+
+/* Responsive layout */
+@media (min-width: 900px) {
+.faq-layout {
+grid-template-columns: minmax(0, 1.1fr) minmax(0, 2.2fr);
+}
+}
+
+/* Space hero a bit more on FAQ page for readability */
+.page-faq .hero {
+padding-top: 3.5rem;
+padding-bottom: 2.75rem;
+}
+
+@media (min-width: 768px) {
+.page-faq .hero {
+padding-top: 4rem;
+padding-bottom: 3rem;
+}
+}
+
+/* ---------- FAQ PAGE BACKGROUND ---------- */
+
+.page-bg-faq {
+  position: relative;
+  background:
+    /* Soft terra wash like case studies */
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.06) 0%,
+      rgba(248, 245, 240, 0.85) 40%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/white-leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Optional: reduce harshness under cards */
+.page-bg-faq .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* FAQ sidebar card */
+.faq-sidebar-card {
+  padding: 1.6rem 1.6rem 1.8rem;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(2px);
+}
+
+.faq-sidebar-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.faq-sidebar-card p {
+  margin-bottom: 1rem;
+}
+
+.faq-sidebar {
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove top margin on footer for FAQ page */
+.page-bg-faq + .site-footer,
+.page-faq + .site-footer {
+  margin-top: 0 !important;
+}
+
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
 /* Smooth scroll for in-page links (e.g. Book a consultation → contact) */

@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body id="top" class="page-faq">
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -53,300 +53,434 @@
     </div>
   </header>
 
-  <main>
+<main class="page-bg-faq">
     <!-- Hero -->
-    <section class="hero" aria-labelledby="faq-hero-title">
+    <section class="hero hero--service" aria-labelledby="faq-hero-title">
       <div class="container hero-inner">
         <div class="hero-content">
           <h1 id="faq-hero-title">Frequently asked questions</h1>
           <p class="intro-text">
-            This page answers some of the questions we’re most often asked by organisations exploring support from 
-            Oak Consultancy. If you can’t find what you’re looking for, you’re very welcome to get in touch.
+            This page brings together the questions we’re most often asked by organisations exploring support from
+            Oak Consultancy — from pricing and timelines to what we’ll need from you.
+          </p>
+          <p class="faq-hero-note">
+            Can’t see your question? <a href="#still-have-questions">Scroll down</a> for how to get in touch with us directly.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Billing & packages -->
-    <section class="section" aria-labelledby="faq-billing-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="faq-billing-title">Billing, pricing &amp; packages</h2>
+    <!-- FAQ layout -->
+    <section class="section" aria-label="Frequently asked questions">
+      <div class="container faq-layout">
+        <!-- Sidebar topics -->
+        <aside class="faq-sidebar">
+          <div class="card faq-sidebar-card">
+            <h2>Topics on this page</h2>
+            <p>Jump straight to the area that’s most relevant to you:</p>
+            <ul class="faq-filter-list">
+              <li><a href="#faq-billing">Billing, pricing &amp; packages</a></li>
+              <li><a href="#faq-timelines">Timelines &amp; how long things take</a></li>
+              <li><a href="#faq-information">Information we’ll need from you</a></li>
+              <li><a href="#faq-success">Success rates &amp; expectations</a></li>
+              <li><a href="#faq-tenders">Tenders, bids &amp; day-to-day support</a></li>
+            </ul>
+          </div>
+        </aside>
 
-          <h3>How does billing work?</h3>
-          <p>
-            Most organisations work with us through one of our support packages, which are billed monthly. Packages are 
-            usually agreed for 12 months to allow enough time for planning, funding applications and follow-up.
-          </p>
+        <!-- Main FAQ content -->
+        <div class="faq-main">
+          <!-- Billing & packages -->
+          <article class="card faq-group" id="faq-billing">
+            <p class="faq-kicker">Pricing &amp; billing</p>
+            <h2>Billing, pricing &amp; packages</h2>
+            <p class="faq-group-intro">
+              Most organisations work with us through one of our support packages, but there is flexibility for one-off
+              pieces of work where that makes more sense.
+            </p>
 
-          <h3>What’s included in the monthly price?</h3>
-          <p>
-            Each package includes a set number of consultancy hours and access to support across bid writing, strategic 
-            planning and tender management. How those hours are used is agreed with you and tracked so you can see where 
-            time is going.
-          </p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How does billing work?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Most organisations work with us through one of our support packages, which are billed monthly.
+                  Packages are usually agreed for 12 months to allow enough time for planning, funding applications
+                  and follow-up.
+                </p>
+              </div>
+            </div>
 
-          <h3>Are there any additional costs?</h3>
-          <p>
-            If work is required beyond the agreed package hours, we will always discuss this with you first and agree 
-            a clear hourly rate. There are no hidden charges.
-          </p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What’s included in the monthly price?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Each package includes a set number of consultancy hours and access to support across bid writing,
+                  strategic planning and tender management. How those hours are used is agreed with you and tracked so
+                  you can see where time is going.
+                </p>
+              </div>
+            </div>
 
-          <h3>Do you offer one-off pieces of work?</h3>
-          <p>
-            Yes. While packages suit many organisations, we can also provide support for a single bid, tender or planning 
-            process. We will discuss the best option during an initial conversation.
-          </p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Are there any additional costs?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  If work is required beyond the agreed package hours, we will always discuss this with you first and
+                  agree a clear hourly rate. There are no hidden charges.
+                </p>
+              </div>
+            </div>
 
-          <p>
-            <a href="packages.html" class="btn-link">Read more about our packages and pricing →</a>
-          </p>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you offer one-off pieces of work?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Yes. While packages suit many organisations, we can also provide support for a single bid, tender or
+                  planning process. We will discuss the best option during an initial conversation.
+                </p>
+              </div>
+            </div>
+
+            <p>
+              <a href="packages.html" class="btn-link">Read more about our packages and pricing →</a>
+            </p>
+          </article>
+
+          <!-- Timelines & process -->
+          <article class="card faq-group" id="faq-timelines">
+            <p class="faq-kicker">Timeframes</p>
+            <h2>Timelines &amp; how long things take</h2>
+            <p class="faq-group-intro">
+              The time involved depends on the size and complexity of the work. We’ll always be honest about what feels
+              realistic for your deadlines.
+            </p>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How long does a typical bid take?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  It depends on the size and complexity of the fund. A small, straightforward grant might only require
+                  a short call and a few days of work, whereas a larger or more complex fund can take several weeks
+                  from first conversation to submission.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How far in advance should we contact you?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  The earlier the better, especially for larger bids or tenders. Ideally, we like to start several
+                  weeks before a deadline to allow for shaping the project, drafting, review and final checks.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How long does strategic planning support take?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  A focused project plan might be developed over a few sessions, while an organisation-wide plan
+                  usually takes longer and may involve several workshops and drafts. We can suggest a sensible
+                  timeframe once we understand your context.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Information we need -->
+          <article class="card faq-group" id="faq-information">
+            <p class="faq-kicker">Getting started</p>
+            <h2>Information we need from your organisation</h2>
+            <p class="faq-group-intro">
+              We keep information requests as focused as possible so you can balance this work with day-to-day delivery.
+            </p>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>What do you need from us to get started?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  For most pieces of work, we will ask for basic information about your organisation (such as governing
+                  documents, contact details and recent accounts) plus any existing project ideas or plans.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Will you need access to our policies and reports?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Often, yes. Funders and commissioners frequently ask for policies (e.g. safeguarding, data
+                  protection) and evidence of impact. We will let you know exactly what is required for each bid
+                  or tender.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How much time will our staff or volunteers need to commit?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  You will still need to be involved, particularly at the start of a project and when reviewing drafts.
+                  We aim to keep requests focused and manageable, so you can balance this with day-to-day delivery.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Success rates & expectations -->
+          <article class="card faq-group" id="faq-success">
+            <p class="faq-kicker">Expectations</p>
+            <h2>Success rates &amp; how to think about outcomes</h2>
+            <p class="faq-group-intro">
+              We can’t control funding decisions, but we can help you make strong, realistic applications and reduce
+              the stress around them.
+            </p>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can you guarantee that our bids will be successful?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  No consultant can guarantee funding outcomes, as final decisions are made by funders or commissioners.
+                  What we can do is ensure that bids are clear, eligible, realistic and well-presented, and that
+                  learning from previous applications is used to strengthen future ones.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How should we think about success?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Success is not only about individual bids being approved. It can also include building a stronger
+                  funding pipeline, improving the way you describe your work, clarifying priorities and reducing
+                  the stress around deadlines.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Will you tell us if something doesn’t feel realistic?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Yes. Part of our role is to be honest about whether a bid or tender feels like a good use of time
+                  based on your capacity, track record and the requirements involved.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tender & bid support -->
+          <article class="card faq-group" id="faq-tenders">
+            <p class="faq-kicker">Tenders &amp; bids in practice</p>
+            <h2>Tender and bid support in practice</h2>
+            <p class="faq-group-intro">
+              We can support you from the “is this worth going for?” stage right through to submission and follow-up.
+            </p>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>How do you support tender responses?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  We help you assess whether an opportunity is realistic, plan the response, coordinate information,
+                  draft and refine content, and carry out final checks before submission. You remain in control of
+                  decisions; we provide structure and support.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Can you just review bids we’ve already written?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Yes. We can review and comment on bids you’ve drafted in-house, suggesting ways to strengthen clarity,
+                  alignment to criteria and overall coherence.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Do you work with very small organisations?</span>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>
+                  Absolutely. Many of the organisations we support are volunteer-run or have very small staff teams.
+                  We tailor our approach to the time and resources you have available.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Helper / reassurance card -->
+          <section class="faq-help-card" id="still-have-questions" aria-labelledby="still-have-questions-title">
+            <div class="card">
+              <h2 id="still-have-questions-title">Still not sure if Oak is the right fit?</h2>
+              <p>
+                If your question isn’t covered here — or you’re unsure whether your organisation is “big enough” or
+                “ready” — a short, informal conversation is usually the quickest way to find out.
+              </p>
+              <p>
+                We’ll be honest about what feels realistic and whether we’re the best people to help, and there’s
+                never any obligation to sign up.
+              </p>
+              <a href="contact.html" class="btn-primary">Get in touch</a>
+            </div>
+          </section>
         </div>
       </div>
     </section>
 
-    <!-- Timelines & process -->
-    <section class="section" aria-labelledby="faq-timelines-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="faq-timelines-title">Timelines &amp; how long things take</h2>
-
-          <h3>How long does a typical bid take?</h3>
-          <p>
-            It depends on the size and complexity of the fund. A small, straightforward grant might only require a 
-            short call and a few days of work, whereas a larger or more complex fund can take several weeks from first 
-            conversation to submission.
-          </p>
-
-          <h3>How far in advance should we contact you?</h3>
-          <p>
-            The earlier the better, especially for larger bids or tenders. Ideally, we like to start several weeks 
-            before a deadline to allow for shaping the project, drafting, review and final checks.
-          </p>
-
-          <h3>How long does strategic planning support take?</h3>
-          <p>
-            A focused project plan might be developed over a few sessions, while an organisation-wide plan usually 
-            takes longer and may involve several workshops and drafts. We can suggest a sensible timeframe once we 
-            understand your context.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Information we need -->
-    <section class="section" aria-labelledby="faq-info-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="faq-info-title">Information we need from your organisation</h2>
-
-          <h3>What do you need from us to get started?</h3>
-          <p>
-            For most pieces of work, we will ask for basic information about your organisation (such as governing 
-            documents, contact details and recent accounts) plus any existing project ideas or plans.
-          </p>
-
-          <h3>Will you need access to our policies and reports?</h3>
-          <p>
-            Often, yes. Funders and commissioners frequently ask for policies (e.g. safeguarding, data protection) 
-            and evidence of impact. We will let you know exactly what is required for each bid or tender.
-          </p>
-
-          <h3>How much time will our staff or volunteers need to commit?</h3>
-          <p>
-            You will still need to be involved, particularly at the start of a project and when reviewing drafts. 
-            We aim to keep requests focused and manageable, so you can balance this with day-to-day delivery.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Success rates & expectations -->
-    <section class="section" aria-labelledby="faq-success-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="faq-success-title">Success rates &amp; expectations</h2>
-
-          <h3>Can you guarantee that our bids will be successful?</h3>
-          <p>
-            No consultant can guarantee funding outcomes, as final decisions are made by funders or commissioners. 
-            What we can do is ensure that bids are clear, eligible, realistic and well-presented, and that learning 
-            from previous applications is used to strengthen future ones.
-          </p>
-
-          <h3>How should we think about success?</h3>
-          <p>
-            Success is not only about individual bids being approved. It can also include building a stronger funding 
-            pipeline, improving the way you describe your work, clarifying priorities and reducing the stress around 
-            deadlines.
-          </p>
-
-          <h3>Will you tell us if something doesn’t feel realistic?</h3>
-          <p>
-            Yes. Part of our role is to be honest about whether a bid or tender feels like a good use of time based on 
-            your capacity, track record and the requirements involved.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tender & bid support -->
-    <section class="section" aria-labelledby="faq-tenders-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="faq-tenders-title">Tender and bid support in practice</h2>
-
-          <h3>How do you support tender responses?</h3>
-          <p>
-            We help you assess whether an opportunity is realistic, plan the response, coordinate information, draft 
-            and refine content, and carry out final checks before submission. You remain in control of decisions; we 
-            provide structure and support.
-          </p>
-
-          <h3>Can you just review bids we’ve already written?</h3>
-          <p>
-            Yes. We can review and comment on bids you’ve drafted in-house, suggesting ways to strengthen clarity, 
-            alignment to criteria and overall coherence.
-          </p>
-
-          <h3>Do you work with very small organisations?</h3>
-          <p>
-            Absolutely. Many of the organisations we support are volunteer-run or have very small staff teams. We tailor 
-            our approach to the time and resources you have available.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Still have questions? CTA -->
+    <!-- CTA band -->
     <section class="section cta-band" aria-label="Consultation call-to-action">
       <div class="container">
         <div class="card cta-card">
-          <h3>Still have questions?</h3>
+          <h3>Want to talk through your situation?</h3>
           <p>
-            If there’s something we haven’t covered here, or you’d like to explore what support could look like for your 
-            organisation, we’re always happy to talk.
+            Whether you have a specific deadline in mind or you’re at the “where do we start?” stage, a free
+            30-minute conversation is often the most helpful first step.
           </p>
-          <a href="contact.html" class="btn-primary">Get in touch</a>
+          <a href="contact.html" class="btn-primary">Book a consultation</a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
+  </footer>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-  </div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
-</footer>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Accordion behaviour for FAQ items
+    const faqButtons = document.querySelectorAll('.faq-question');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    faqButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const answer = button.nextElementSibling;
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
-
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
+        button.setAttribute('aria-expanded', String(!expanded));
+        if (answer) {
+          answer.hidden = expanded;
+        }
+      });
     });
-
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
-
+  </script>
 </body>
 </html>
