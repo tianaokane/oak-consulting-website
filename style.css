@@ -1865,6 +1865,56 @@ padding-bottom: 3rem;
     );
 }
 
+/* ---------- STRATEGIC PLANNING PAGE BACKGROUND ---------- */
+
+.page-bg-strategic {
+  position: relative;
+  background:
+    /* Soft terra wash over the pattern */
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.06) 0%,
+      rgba(248, 245, 240, 0.9) 40%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Make cards feel nicely glassy over the patterned leaf background */
+.page-bg-strategic .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* Remove any big gap before footer on this page */
+.page-bg-strategic + .site-footer,
+.page-strategic + .site-footer {
+  margin-top: 0 !important;
+}
+
+/* ---------- ALTERNATING BANDS FOR SERVICE PAGES ---------- */
+
+.bg-alt-1 {
+  /* Warm cream – matches site background */
+  background: var(--color-light);
+}
+
+.bg-alt-2 {
+  /* Soft terra-tinted gradient band */
+  background: linear-gradient(
+    to bottom,
+    rgba(186, 71, 52, 0.05),
+    rgba(186, 71, 52, 0.03)
+  );
+}
+
+.bg-alt-3 {
+  /* Clean white surface band */
+  background: var(--color-surface);
+}
 
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
