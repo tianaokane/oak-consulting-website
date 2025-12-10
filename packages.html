@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body id="top" class="page-packages page-bg-packages">
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -55,9 +55,10 @@
 
   <main>
     <!-- Hero / intro -->
-    <section class="hero" aria-labelledby="packages-hero-title">
+    <section class="hero hero-packages reveal-on-scroll" aria-labelledby="packages-hero-title">
       <div class="container hero-inner">
         <div class="hero-content">
+          <p class="packages-hero-eyebrow">Packages &amp; pricing</p>
           <h1 id="packages-hero-title">Support packages designed to match your capacity and budget.</h1>
           <p class="intro-text">
             Some organisations just need a light-touch steer and occasional funding alerts. Others want a long-term
@@ -67,68 +68,187 @@
             Oak Consultancy’s packages are designed to be clear, flexible and realistic. All packages begin with an
             initial conversation so we can understand your context before any work begins.
           </p>
+
+          <div class="packages-hero-meta">
+            <ul class="packages-hero-pills">
+              <li class="packages-hero-pill">From £50 per month</li>
+              <li class="packages-hero-pill">Designed for charities &amp; community groups</li>
+              <li class="packages-hero-pill">Tracked hours &amp; clear reporting</li>
+            </ul>
+            <p class="packages-hero-footnote">
+              Not sure what you need yet? A free 30-minute conversation is often the best starting point.
+            </p>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#packages-title" class="btn-primary">Compare packages</a>
+            <a href="#billing-title" class="btn-link">How pricing &amp; billing works →</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Packages grid -->
-    <section class="section" aria-labelledby="packages-title">
+    <!-- Snapshot band -->
+    <section class="section snapshot-band reveal-on-scroll" aria-label="Packages at a glance">
       <div class="container">
-        <h2 id="packages-title">Our packages</h2>
-        <p class="section-intro">
-          Choose the level of support that fits your organisation. If you’re unsure which package is right for you,
-          we’ll happily talk it through and make a recommendation.
+        <div class="grid snapshot-grid">
+          <article class="card snapshot-card">
+            <p class="snapshot-heading">Starting from</p>
+            <p class="snapshot-metric">£50 / month</p>
+            <p class="snapshot-copy">Ideal for smaller groups who want to stay informed and dip into support when needed.</p>
+          </article>
+
+          <article class="card snapshot-card">
+            <p class="snapshot-heading">Consultancy hours</p>
+            <p class="snapshot-metric">Up to 120 hours</p>
+            <p class="snapshot-copy">Higher packages include a structured bank of hours to spread across the year.</p>
+          </article>
+
+          <article class="card snapshot-card">
+            <p class="snapshot-heading">Support types</p>
+            <p class="snapshot-metric">Bids · Planning · Tenders</p>
+            <p class="snapshot-copy">All packages can flex across bid writing, strategic planning and tender support.</p>
+          </article>
+
+          <article class="card snapshot-card">
+            <p class="snapshot-heading">Who it’s for</p>
+            <p class="snapshot-metric">Community-rooted organisations</p>
+            <p class="snapshot-copy">Charities, community groups, schools, sports clubs, social enterprises and small businesses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- Packages grid -->
+<section class="section section--packages-main" aria-labelledby="packages-title">
+  <div class="container">
+    <div class="packages-heading-card">
+      <h2 id="packages-title">Compare our packages</h2>
+      <p class="section-intro">
+        Choose the level of support that fits your organisation. If you’re not sure which option is right,
+        we can talk it through and recommend a realistic fit for your size, workload and budget.
+      </p>
+    </div>
+
+    <div class="packages-grid">
+      <!-- Basic -->
+      <article class="package-card reveal-on-scroll" id="basic-package">
+        <header class="package-card-header">
+          <div>
+            <p class="package-tier">Basic</p>
+            <p class="package-price">£50 <span>/ month</span></p>
+          </div>
+          <p class="package-label">Best for smaller, volunteer-led groups</p>
+        </header>
+
+        <p class="package-summary">
+          For groups who want to stay on top of realistic funding opportunities and dip into support
+          occasionally, without committing to a large bank of hours.
         </p>
 
-        <div class="packages-grid">
-          <!-- Basic -->
-          <article class="package-card" id="basic-package">
-            <h3 class="package-tier">Basic</h3>
-            <p class="package-price">£50 <span>/ month</span></p>
-            <p>
-              Ideal if you want to keep an eye on opportunities and get occasional support, but don’t need a large
-              number of bids written each year.
-            </p>
-            <ul>
-              <li>Initial assessment of your organisation’s funding needs.</li>
-              <li>Needs reviewed twice per year.</li>
-              <li>Funding alert service for suitable opportunities.</li>
-              <li>Option for Oak Consultancy to complete applications at an agreed hourly rate.</li>
-            </ul>
-          </article>
+        <ul class="package-list">
+          <li>Initial assessment of your organisation’s funding needs.</li>
+          <li>Light review of those needs twice per year.</li>
+          <li>Funding alert service for opportunities that match your priorities.</li>
+          <li>Option for Oak Consultancy to complete applications at an agreed hourly rate.</li>
+        </ul>
 
-          <!-- Standard -->
-          <article class="package-card" id="standard-package">
-            <h3 class="package-tier">Standard</h3>
+        <p class="package-note">
+          Recommended if your main priority is staying informed about what’s possible, with the
+          flexibility to request hands-on help when needed.
+        </p>
+      </article>
+
+      <!-- Standard -->
+      <article class="package-card package-card--highlight reveal-on-scroll" id="standard-package">
+        <header class="package-card-header">
+          <div>
+            <p class="package-tier">Standard</p>
             <p class="package-price">£285 <span>/ month</span></p>
-            <p>
-              For organisations who want regular, proactive support with funding, planning and applications across the
-              year.
-            </p>
-            <ul>
-              <li>Up to 100 hours of consultancy support across 12 months.</li>
-              <li>Initial consultation plus quarterly review meetings.</li>
-              <li>Funding identification and alerts for relevant opportunities.</li>
-              <li>Writing and submission of applications on your behalf.</li>
-              <li>Support with monitoring and evaluation for funded projects.</li>
-            </ul>
-          </article>
+          </div>
+          <div class="package-header-right">
+            <p class="package-badge">Most popular</p>
+            <p class="package-label">For organisations with regular funding activity</p>
+          </div>
+        </header>
 
-          <!-- Premium -->
-          <article class="package-card" id="premium-package">
-            <h3 class="package-tier">Premium</h3>
+        <p class="package-summary">
+          For organisations that want regular, proactive support with funding, planning and applications
+          across the year – without everything falling on one member of staff or a few volunteers.
+        </p>
+
+        <ul class="package-list">
+          <li>Up to 100 hours of consultancy support over 12 months.</li>
+          <li>Initial consultation plus quarterly review meetings.</li>
+          <li>Identification of suitable funding and regular alerts for new opportunities.</li>
+          <li>Writing and submission of applications on your behalf.</li>
+          <li>Support with monitoring and evaluation for funded projects.</li>
+        </ul>
+
+        <p class="package-note">
+          A good fit if you expect to pursue several grants or tenders each year and want joined-up
+          support across bids, planning and reporting.
+        </p>
+      </article>
+
+      <!-- Premium -->
+      <article class="package-card reveal-on-scroll" id="premium-package">
+        <header class="package-card-header">
+          <div>
+            <p class="package-tier">Premium</p>
             <p class="package-price">£350 <span>/ month</span></p>
-            <p>
-              Our most comprehensive level of support, for organisations that want Oak Consultancy closely involved in
-              their funding and reporting throughout the year.
-            </p>
+          </div>
+          <p class="package-label">For long-term, partner-level support</p>
+        </header>
+
+        <p class="package-summary">
+          Our most comprehensive level of support, for organisations that want Oak Consultancy closely
+          involved in funding, reporting and planning throughout the year.
+        </p>
+
+        <ul class="package-list">
+          <li>Everything included in the Standard package.</li>
+          <li>120 consultancy hours per year.</li>
+          <li>Monthly written update for your board or committee.</li>
+          <li>Attendance at your AGM to report on grants and fundraising performance.</li>
+        </ul>
+
+        <p class="package-note">
+          Recommended if you are managing multiple projects, larger budgets or a higher volume of bids
+          and reports, and want a consistent external partner alongside your team.
+        </p>
+      </article>
+    </div>
+
+    <p class="packages-footnote">
+      Hours can be spread flexibly across the year to match peaks in activity – such as deadlines,
+      planning cycles and reporting periods.
+    </p>
+  </div>
+</section>
+
+
+    <!-- Included with every package -->
+    <section class="section" aria-labelledby="included-title">
+      <div class="container">
+        <div class="card reveal-on-scroll">
+          <h2 id="included-title">What’s included with every package</h2>
+          <p class="section-intro">
+            Regardless of the level you choose, all packages are built around clear communication and transparent use of time.
+          </p>
+
+          <div class="packages-included-grid">
             <ul>
-              <li>Everything in the Standard package.</li>
-              <li>120 consultancy hours per year.</li>
-              <li>Monthly written update for your board or committee.</li>
-              <li>Attendance at your AGM to report on grants and fundraising performance.</li>
+              <li>Initial conversation at no cost or obligation before any work begins.</li>
+              <li>A simple written outline of agreed priorities for the year.</li>
+              <li>Tracked hours with periodic updates so you can see how support is being used.</li>
             </ul>
-          </article>
+            <ul>
+              <li>Funding advice that’s realistic for your size, capacity and context.</li>
+              <li>Honest feedback on where bids or tenders are strong — and where they may be risky.</li>
+              <li>Clear next steps after key deadlines (successful or unsuccessful).</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -136,32 +256,37 @@
     <!-- Which package is right for you -->
     <section class="section" aria-labelledby="which-package-title">
       <div class="container">
-        <div class="card">
-          <h2 id="which-package-title">Which package is right for you?</h2>
-          <p class="section-intro">
-            The “right” package depends on how much internal capacity you have, how many projects you are running and
-            how ambitious your funding targets are.
-          </p>
+        <div class="card packages-fit-card reveal-on-scroll">
+          <div class="packages-fit-grid">
+            <div>
+              <h2 id="which-package-title">Which package is right for you?</h2>
+              <p class="section-intro">
+                The “right” package depends on how much internal capacity you have, how many projects you are running and
+                how ambitious your funding targets are.
+              </p>
+              <p>
+                If none of these feels quite right, we can discuss a tailored arrangement based on a specific project,
+                timeframe or combination of services.
+              </p>
+            </div>
 
-          <ul>
-            <li>
-              <strong>Choose Basic</strong> if you mainly need to stay informed about opportunities and want the option
-              of occasional, paid bid-writing support.
-            </li>
-            <li>
-              <strong>Choose Standard</strong> if you expect to pursue several grants or tenders each year and want
-              ongoing support with planning, writing and reporting.
-            </li>
-            <li>
-              <strong>Choose Premium</strong> if you want Oak Consultancy to act as a long-term partner, supporting
-              board reporting, planning and a higher volume of bids.
-            </li>
-          </ul>
-
-          <p>
-            If none of these feels quite right, we can discuss a tailored arrangement based on a specific project,
-            timeframe or combination of services.
-          </p>
+            <div>
+              <ul class="packages-fit-list">
+                <li>
+                  <strong>Choose Basic</strong> if you mainly need to stay informed about opportunities and want the option
+                  of occasional, paid bid-writing support.
+                </li>
+                <li>
+                  <strong>Choose Standard</strong> if you expect to pursue several grants or tenders each year and want
+                  ongoing support with planning, writing and reporting.
+                </li>
+                <li>
+                  <strong>Choose Premium</strong> if you want Oak Consultancy to act as a long-term partner, supporting
+                  board reporting, planning and a higher volume of bids.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -169,7 +294,7 @@
     <!-- How pricing & billing works -->
     <section class="section" aria-labelledby="billing-title">
       <div class="container">
-        <div class="card">
+        <div class="card reveal-on-scroll">
           <h2 id="billing-title">How pricing &amp; billing works</h2>
           <p class="section-intro">
             We aim to keep pricing transparent and predictable, so you can plan with confidence.
@@ -190,134 +315,137 @@
     </section>
 
     <!-- CTA band -->
-    <section class="section cta-band" aria-label="Consultation call-to-action">
+    <section class="section cta-band section-angle-top" aria-label="Consultation call-to-action">
       <div class="container">
-        <div class="card cta-card">
+        <div class="card cta-card reveal-on-scroll">
           <h3>Talk through the options with us</h3>
           <p>
             If you are unsure which package fits, or you would like to explore a more tailored arrangement, 
             the best next step is a short conversation about your organisation and priorities.
           </p>
-          <a href="index.html#contact" class="btn-primary">Book a consultation</a>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn-primary">Book a consultation</a>
+            <span class="cta-reassurance">
+              No obligation, no hard sell — just an honest conversation about what’s realistic.
+            </span>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
+  </footer>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-  </div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
-</footer>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Scroll reveal for elements with .reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal-on-scroll');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target); // only animate once
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
-
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
-    });
-
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
-
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: just show them
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+  </script>
 </body>
 </html>

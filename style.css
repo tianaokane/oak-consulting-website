@@ -1113,6 +1113,306 @@ main.page-bg-casestudies + .site-footer {
   }
 }
 
+/* ---------- PACKAGES PAGE ENHANCEMENTS ---------- */
+
+/* Soft textured background similar to FAQ / case studies */
+.page-bg-packages {
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.06) 0%,
+      rgba(248, 245, 240, 0.85) 40%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/white-leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Make cards slightly glassy over the patterned background */
+.page-bg-packages .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* Ensure there isn’t a big white gap before the footer */
+.page-bg-packages + .site-footer,
+.page-packages + .site-footer {
+  margin-top: 0 !important;
+}
+
+/* Make package cards fully solid for better readability */
+.page-packages .package-card {
+  background: #ffffff !important; /* fully opaque, no leaf bleed */
+  backdrop-filter: none !important;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Improve text contrast inside cards */
+.page-packages .package-card p,
+.page-packages .package-card li {
+  color: #2c2c2c; /* darker charcoal for crisper reading */
+}
+
+/* Slightly darker headings for clarity */
+.page-packages .package-card .package-tier,
+.page-packages .package-card .package-price,
+.page-packages .package-card-header p {
+  color: #1f1f1f;
+}
+
+/* Packages hero tweaks */
+/* Standalone gradient hero for packages */
+.hero.hero-packages {
+  background:
+    radial-gradient(circle at top right, rgba(186, 71, 52, 0.18), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(140, 46, 29, 0.14), transparent 60%),
+    var(--color-surface); /* solid base so no leaves show through */
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 768px) {
+  .hero.hero-packages {
+    padding-top: 4.25rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.page-packages .package-card {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+.packages-hero-eyebrow {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+}
+
+.packages-hero-meta {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.packages-hero-pills {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.packages-hero-pill {
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface);
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.packages-hero-footnote {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Snapshot band reuse but slightly tweaked for this page */
+.snapshot-card {
+  text-align: left;
+}
+
+.packages-grid {
+  margin-top: 1.5rem;
+}
+
+/* Package cards – enhanced layout */
+.package-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.package-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.8;
+  text-align: right;
+}
+
+.package-header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-end;
+}
+
+.package-badge {
+  display: inline-flex;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(186, 71, 52, 0.12);
+  color: var(--color-primary-strong);
+}
+
+.package-summary {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.package-list {
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.package-note {
+  font-size: 0.86rem;
+  margin-top: 0.4rem;
+  opacity: 0.9;
+}
+
+/* Highlight the middle (Standard) package */
+.package-card--highlight {
+  border: 2px solid rgba(186, 71, 52, 0.4);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.16);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .package-card--highlight {
+    transform: translateY(-4px);
+  }
+}
+
+/* Footnote under packages grid */
+.packages-footnote {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+/* Included-with-all section */
+.packages-included-grid {
+  display: grid;
+  gap: 1rem 2rem;
+  margin-top: 0.75rem;
+}
+
+.packages-included-grid ul {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .packages-included-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Which package is right for you */
+.packages-fit-card {
+  padding: 1.6rem 1.6rem 1.8rem;
+}
+
+.packages-fit-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 900px) {
+  .packages-fit-grid {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.6fr);
+  }
+}
+
+.packages-fit-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.95rem;
+}
+
+.packages-fit-list li + li {
+  margin-top: 0.5rem;
+}
+
+/* CTA band tweaks for packages page */
+.page-packages .cta-band {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.page-packages .cta-card {
+  position: relative;
+}
+
+.page-packages .cta-card .cta-actions {
+  margin-top: 0.75rem;
+}
+
+.page-packages .cta-card .cta-reassurance {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+/* Slightly soften hover on package cards (overrides generic card hover) */
+.package-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.14);
+}
+
+/* Main packages section */
+.section--packages-main {
+  position: relative;
+}
+
+/* Heading card so text isn't sitting on the leaf background */
+.packages-heading-card {
+  max-width: 44rem;
+  margin: 0 auto 1.75rem;
+  padding: 1.1rem 1.4rem 1.3rem;
+  border-radius: 1.2rem;
+  background: rgba(248, 245, 240, 0.98);
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.14);
+  text-align: center;
+}
+
+.section--packages-main #packages-title {
+  margin-bottom: 0.4rem;
+}
+
+.section--packages-main .section-intro {
+  margin-bottom: 0;
+}
+
+/* Footnote chip under the cards */
+.packages-footnote {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
+  opacity: 0.95;
+
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(248, 245, 240, 0.98);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.10);
+}
+
 /* ---------- FAQ PAGE ENHANCEMENTS ---------- */
 
 .faq-hero-note {
