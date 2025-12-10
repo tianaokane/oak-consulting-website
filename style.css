@@ -1865,6 +1865,63 @@ padding-bottom: 3rem;
     );
 }
 
+/* ---------- WHO WE HELP PAGE BACKGROUND ---------- */
+
+.page-bg-who {
+  position: relative;
+  background:
+    /* Soft terra wash over a subtle leaf pattern */
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.07) 0%,
+      rgba(248, 245, 240, 0.9) 45%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Make cards feel slightly glassy over the patterned background */
+.page-bg-who .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* Slightly styled hero on this page so it blends with the background */
+.page-who .hero {
+  background:
+    radial-gradient(circle at top left, rgba(186, 71, 52, 0.16), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(140, 46, 29, 0.10), transparent 60%),
+    var(--color-surface);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Remove any big white gap before the footer on this page */
+.page-bg-who + .site-footer,
+.page-who + .site-footer {
+  margin-top: 0 !important;
+}
+
+.who-glance-intro {
+  background: rgba(255, 255, 255, 0.72); /* soft translucent panel */
+  backdrop-filter: blur(3px);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+.who-glance-outro {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(3px);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
 /* ---------- BID WRITING PAGE BACKGROUND ---------- */
 
 .page-bg-bid {
@@ -2210,6 +2267,19 @@ html {
     transform 150ms ease-out,
     border-color 150ms ease-out,
     background 150ms ease-out;
+}
+
+.who-tile-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  margin-bottom: 0.75rem;
+  opacity: 0.9;
+  display: block;
+}
+
+.who-tile-icon {
+  filter: brightness(0) saturate(100%) invert(26%) sepia(42%) saturate(1352%) hue-rotate(344deg) brightness(92%) contrast(90%);
 }
 
 .who-tile h3 {

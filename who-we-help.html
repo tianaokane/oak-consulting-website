@@ -53,11 +53,12 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-bg-who page-who">
     <!-- Hero -->
     <section class="hero" aria-labelledby="who-hero-title">
-      <div class="container hero-inner">
+      <div class="container hero-inner reveal-on-scroll">
         <div class="hero-content">
+          <p class="mini-about-heading">Who we help</p>
           <h1 id="who-hero-title">Supporting organisations that are rooted in their communities.</h1>
           <p class="intro-text">
             Oak Consultancy works with organisations of different sizes and structures – from small, volunteer-led groups 
@@ -74,34 +75,76 @@
 
     <!-- At a glance -->
     <section class="section" aria-labelledby="at-a-glance-title">
-      <div class="container">
-        <h2 id="at-a-glance-title">At a glance: who we help</h2>
-        <p class="section-intro">
-          Here are some of the types of organisations we regularly support. If you don’t see yourself listed, 
+      <div class="container reveal-on-scroll">
+        <h2 id="at-a-glance-title">At a glance: who we regularly support</h2>
+        <p class="section-intro who-glance-intro">
+          Most of the organisations we work with fall into one of these groups. If you don’t see yourself listed, 
           you’re still very welcome to get in touch.
         </p>
 
-        <div class="who-we-help">
-          <ul>
-            <li>Registered charities</li>
-            <li>Community groups &amp; associations</li>
-            <li>Schools &amp; PTAs</li>
-            <li>Youth projects &amp; clubs</li>
-          </ul>
-          <ul>
-            <li>Sports clubs &amp; grassroots teams</li>
-            <li>Churches &amp; faith-based organisations</li>
-            <li>Social enterprises &amp; CICs</li>
-            <li>Small businesses with a community focus</li>
-          </ul>
-        </div>
+        <div class="who-we-help-tiles">
+
+        <article class="who-tile">
+          <img src="assets/icons/charities.png" alt="" class="who-tile-icon">
+          <h3>Registered charities</h3>
+          <p>From small local charities to regional organisations with multiple projects.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/community.png" alt="" class="who-tile-icon">
+          <h3>Community groups &amp; associations</h3>
+          <p>Neighbourhood groups, community associations and volunteer-led initiatives.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/Graduationcap.png" alt="" class="who-tile-icon">
+          <h3>Schools &amp; PTAs</h3>
+          <p>Primary and post-primary schools, PTAs and parent-led projects.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/youth.png" alt="" class="who-tile-icon">
+          <h3>Youth projects &amp; clubs</h3>
+          <p>Youth work projects, informal groups and after-school programmes.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/sports.png" alt="" class="who-tile-icon">
+          <h3>Sports clubs &amp; grassroots teams</h3>
+          <p>Clubs wanting to grow youth programmes and keep participation affordable.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/faith.png" alt="" class="who-tile-icon">
+          <h3>Churches &amp; faith-based organisations</h3>
+          <p>Congregations delivering practical community support alongside worship.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/sustainability.png" alt="" class="who-tile-icon">
+          <h3>Social enterprises &amp; CICs</h3>
+          <p>Organisations balancing social impact with trading income.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/shop.png" alt="" class="who-tile-icon">
+          <h3>Small businesses with a community focus</h3>
+          <p>Enterprises exploring relevant grants, tenders and partnerships.</p>
+        </article>
+
+      </div>
+
+        <p class="section-intro who-glance-outro">
+          If you are working to benefit a local community or specific group, we can usually find a way to shape support around you.
+        </p>
       </div>
     </section>
 
     <!-- Charities & community organisations -->
     <section class="section" aria-labelledby="charities-title">
-      <div class="container">
+      <div class="container reveal-on-scroll">
         <div class="card">
+          <p class="faq-kicker">Charities &amp; community organisations</p>
           <h2 id="charities-title">Charities &amp; community organisations</h2>
           <p class="section-intro">
             Many of the charities and community groups we work with are juggling day-to-day delivery with the pressure 
@@ -127,8 +170,9 @@
 
     <!-- Education & young people -->
     <section class="section" aria-labelledby="education-title">
-      <div class="container">
+      <div class="container reveal-on-scroll">
         <div class="card">
+          <p class="faq-kicker">Schools, PTAs &amp; youth work</p>
           <h2 id="education-title">Schools, PTAs &amp; youth projects</h2>
           <p class="section-intro">
             Schools, PTAs and youth organisations often have strong ideas for how to support children and young people, 
@@ -153,8 +197,9 @@
 
     <!-- Sports, faith and social enterprises -->
     <section class="section" aria-labelledby="sports-faith-social-title">
-      <div class="container">
+      <div class="container reveal-on-scroll">
         <div class="card">
+          <p class="faq-kicker">Sports, faith &amp; social enterprises</p>
           <h2 id="sports-faith-social-title">Sports clubs, faith groups &amp; social enterprises</h2>
           <p class="section-intro">
             From local sports clubs to churches and social enterprises, many organisations are delivering significant 
@@ -179,7 +224,7 @@
 
     <!-- Is Oak right for you? -->
     <section class="section" aria-labelledby="fit-title">
-      <div class="container">
+      <div class="container reveal-on-scroll">
         <div class="card">
           <h2 id="fit-title">Is Oak Consultancy a good fit for your organisation?</h2>
           <p class="section-intro">
@@ -202,139 +247,142 @@
     </section>
 
     <!-- CTA band -->
-    <section class="section cta-band" aria-label="Consultation call-to-action">
-      <div class="container">
+    <section class="section cta-band section-angle-top" aria-label="Consultation call-to-action">
+      <div class="container reveal-on-scroll">
         <div class="card cta-card">
           <h3>Not sure where your organisation fits?</h3>
           <p>
             A short conversation is often the easiest way to work it out. Tell us a little about your organisation and 
             we’ll let you know how Oak Consultancy can help – or if there’s a better route for you.
           </p>
-          <a href="index.html#contact" class="btn-primary">Book a consultation</a>
+          <p class="cta-reassurance">
+            There’s no obligation and no hard sell — just an honest look at what’s realistic for your size and capacity.
+          </p>
+          <a href="contact.html" class="btn-primary">Book a consultation</a>
         </div>
       </div>
     </section>
   </main>
 
- <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img
-        src="assets/logo/horizontal-red-leaf.png"
-        alt="Oak Consultancy logo"
-        class="footer-logo"
-      >
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img
+          src="assets/logo/horizontal-red-leaf.png"
+          alt="Oak Consultancy logo"
+          class="footer-logo"
+        >
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
+    </div>
+
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <div class="container footer-legal-inner">
+        <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+        <small>
+          <a href="privacy-policy.html">Privacy Policy</a> ·
+          <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+        </small>
       </div>
     </div>
+  </footer>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-  </div>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <div class="container footer-legal-inner">
-    <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-    <small>
-      <a href="privacy-policy.html">Privacy Policy</a> ·
-      <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-    </small>
-  </div>
-</div>
-</footer>
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Scroll reveal for elements with .reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal-on-scroll');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target); // only animate once
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
-
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
-    });
-
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: just show them
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+  </script>
 
 </body>
 </html>
