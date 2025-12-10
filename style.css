@@ -2034,16 +2034,213 @@ padding-bottom: 3rem;
 
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
+/* --- Home: Who we are + stats band --- */
+
+.mini-about-band {
+  background: var(--color-page-bg);
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.mini-about-layout {
+  display: grid;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.mini-about-stats {
+  /* keep it from getting too wide on huge screens */
+  max-width: 24rem;
+  justify-self: flex-start;
+}
+
+.mini-about-stats-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 0.75rem;
+}
+
+/* compact grid for the 4 stats */
+.snapshot-grid--compact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.9rem;
+}
+
+.mini-about-stats .snapshot-card {
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+  background: var(--color-surface);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+/* stat text tweaks */
+.snapshot-heading {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.2rem;
+  opacity: 0.8;
+}
+
+.snapshot-metric {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-strong);
+  margin-bottom: 0.2rem;
+}
+
+.snapshot-copy {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* side-by-side on wider screens */
+@media (min-width: 900px) {
+  .mini-about-layout {
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
+  }
+
+  .mini-about-stats {
+    justify-self: flex-end;
+  }
+}
+
+/* keep it comfy on smaller screens (already stacked by default) */
+@media (max-width: 899px) {
+  .mini-about-layout {
+    gap: 1.75rem;
+  }
+}
+
 /* Smooth scroll for in-page links (e.g. Book a consultation → contact) */
 html {
   scroll-behavior: smooth;
 }
 
+/* ---------- HOME PAGE SECTOR CAROUSEL ---------- */
+
+.sector-carousel {
+  position: relative;
+  margin-top: 1.25rem;
+}
+
+/* Horizontal scroll track */
+.sector-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+/* Reuse who-tile styling but make them behave like slides */
+.sector-track .who-tile {
+  flex: 0 0 80%;
+  min-width: 240px;
+  max-width: 320px;
+  scroll-snap-align: center;
+}
+
+/* Slight emphasis on the active slide */
+.sector-track .who-tile.is-active {
+  border-color: var(--color-primary);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.16);
+}
+
+/* Hide default scrollbar in a gentle way on WebKit */
+.sector-track::-webkit-scrollbar {
+  height: 6px;
+}
+.sector-track::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.7);
+  border-radius: 999px;
+}
+.sector-track::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Arrow buttons */
+.sector-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: var(--color-surface);
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--color-charcoal);
+  transition:
+    transform 150ms ease-out,
+    box-shadow 150ms ease-out,
+    opacity 120ms ease-out;
+}
+
+.sector-nav--prev {
+  left: -0.25rem;
+}
+
+.sector-nav--next {
+  right: -0.25rem;
+}
+
+.sector-nav:hover:not(:disabled) {
+  transform: translateY(-50%) translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.18);
+}
+
+.sector-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* On smaller screens: rely on swipe/scroll, hide arrows */
+@media (max-width: 720px) {
+  .sector-nav {
+    display: none;
+  }
+
+  .sector-track .who-tile {
+    flex-basis: 85%;
+  }
+}
+
+/* On larger screens, centre the carousel a bit wider */
+@media (min-width: 900px) {
+  .sector-track {
+    padding-inline: 1.5rem;
+  }
+
+  .sector-track .who-tile {
+    flex-basis: 290px;
+  }
+
+  .sector-nav--prev {
+    left: 0;
+  }
+
+  .sector-nav--next {
+    right: 0;
+  }
+}
+
 /* Hero refinements */
-.hero.hero-home {
-  /* Soft terra-tinted background, still mostly light */
+.hero-home {
   background:
-    radial-gradient(circle at top left, rgba(186, 71, 52, 0.12), transparent 55%),
+    radial-gradient(circle at 40% 15%, rgba(186,71,52,0.20), transparent 60%),
+    radial-gradient(circle at 80% 90%, rgba(186,71,52,0.12), transparent 70%),
     var(--color-surface);
 }
 

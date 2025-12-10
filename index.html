@@ -81,9 +81,9 @@
       </div>
     </section>
 
-    <!-- Mini “Who we are” band -->
-    <section class="section mini-about-band" aria-label="About Oak">
-      <div class="container reveal-on-scroll mini-about-inner">
+    <!-- Who we are + stats band -->
+    <section class="section mini-about-band" aria-label="About Oak and track record">
+      <div class="container reveal-on-scroll mini-about-layout">
         <div class="mini-about-content">
           <h2 class="mini-about-heading">Who we are</h2>
           <p>
@@ -99,6 +99,32 @@
             <a href="about.html" class="btn-link">More about Oak Consultancy →</a>
           </p>
         </div>
+
+        <aside class="mini-about-stats" aria-label="Oak Consultancy track record">
+          <h3 class="mini-about-stats-heading">At a glance</h3>
+          <div class="snapshot-grid snapshot-grid--compact">
+            <div class="snapshot-card">
+              <p class="snapshot-heading">Organisations supported</p>
+              <p class="snapshot-metric">120+</p>
+              <p class="snapshot-copy">Across NI and the UK</p>
+            </div>
+            <div class="snapshot-card">
+              <p class="snapshot-heading">Funding secured</p>
+              <p class="snapshot-metric">£4.2m</p>
+              <p class="snapshot-copy">For community and youth projects</p>
+            </div>
+            <div class="snapshot-card">
+              <p class="snapshot-heading">Tender submissions</p>
+              <p class="snapshot-metric">350+</p>
+              <p class="snapshot-copy">From local to large-scale contracts</p>
+            </div>
+            <div class="snapshot-card">
+              <p class="snapshot-heading">Client satisfaction</p>
+              <p class="snapshot-metric">96%</p>
+              <p class="snapshot-copy">Repeat engagement rate</p>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -243,46 +269,82 @@
     </section>
 
     <!-- Who we help (preview) -->
-    <section class="section" aria-labelledby="who-preview-title">
-      <div class="container reveal-on-scroll">
-        <h2 id="who-preview-title">Who we help</h2>
-        <p class="section-intro">
-          Oak Consultancy supports organisations that are making a difference in their communities and
-          need practical, down-to-earth support.
-        </p>
+<section class="section" aria-labelledby="who-preview-title">
+  <div class="container reveal-on-scroll">
+    <h2 id="who-preview-title">Who we help</h2>
+    <p class="section-intro">
+      Oak Consultancy supports organisations that are making a difference in their communities and
+      need practical, down-to-earth support.
+    </p>
 
-        <div class="who-we-help-tiles">
-          <article class="who-tile">
-            <h3>Charities</h3>
-            <p>Building a clearer funding pipeline and easing pressure on teams.</p>
-          </article>
-          <article class="who-tile">
-            <h3>Community groups</h3>
-            <p>Turning local ideas into funded, deliverable projects.</p>
-          </article>
-          <article class="who-tile">
-            <h3>Schools &amp; PTAs</h3>
-            <p>Supporting improvements and enrichment activities for pupils.</p>
-          </article>
-          <article class="who-tile">
-            <h3>Sports clubs</h3>
-            <p>Helping keep membership affordable while growing programmes.</p>
-          </article>
-          <article class="who-tile">
-            <h3>Small businesses</h3>
-            <p>Exploring relevant grants, tenders and planning support.</p>
-          </article>
-          <article class="who-tile">
-            <h3>Social enterprises &amp; CICs</h3>
-            <p>Aligning impact, income and sustainable growth.</p>
-          </article>
-        </div>
+    <!-- Sector carousel -->
+    <div class="sector-carousel" aria-label="Example sectors Oak Consultancy supports">
+      <button
+        class="sector-nav sector-nav--prev"
+        type="button"
+        aria-label="Previous sector"
+      >
+        ‹
+      </button>
 
-        <p>
-          <a href="who-we-help.html" class="btn-link">See all sectors we work with →</a>
-        </p>
+      <div class="sector-track">
+        <article class="who-tile is-active">
+          <img src="assets/icons/charities.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Charities</h3>
+          <p>Building a clearer funding pipeline and easing pressure on teams.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/community.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Community groups</h3>
+          <p>Turning local ideas into funded, deliverable projects.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/Graduationcap.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Schools &amp; PTAs</h3>
+          <p>Supporting improvements and enrichment activities for pupils.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/sports.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Sports clubs</h3>
+          <p>Helping keep membership affordable while growing programmes.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/shop.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Small businesses</h3>
+          <p>Exploring relevant grants, tenders and planning support.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/sustainability.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Social enterprises &amp; CICs</h3>
+          <p>Aligning impact, income and sustainable growth.</p>
+        </article>
+
+        <article class="who-tile">
+          <img src="assets/icons/faith.png" alt="" class="who-tile-icon" loading="lazy">
+          <h3>Faith &amp; community organisations</h3>
+          <p>Supporting congregations and faith-based groups with practical projects.</p>
+        </article>
       </div>
-    </section>
+
+      <button
+        class="sector-nav sector-nav--next"
+        type="button"
+        aria-label="Next sector"
+      >
+        ›
+      </button>
+    </div>
+
+    <p>
+      <a href="who-we-help.html" class="btn-link">See all sectors we work with →</a>
+    </p>
+  </div>
+</section>
 
     <!-- Packages teaser -->
     <section class="section" aria-labelledby="pricing-teaser-title">
@@ -569,6 +631,78 @@
         }
       });
     });
+
+    // Sector carousel (Who we help preview)
+const sectorCarousel = document.querySelector('.sector-carousel');
+
+if (sectorCarousel) {
+  const track = sectorCarousel.querySelector('.sector-track');
+  const items = Array.from(track.querySelectorAll('.who-tile'));
+  const prevBtn = sectorCarousel.querySelector('.sector-nav--prev');
+  const nextBtn = sectorCarousel.querySelector('.sector-nav--next');
+
+  let currentIndex = 0;
+
+  function updateSectorCarousel() {
+    // Highlight active tile
+    items.forEach((item, index) => {
+      item.classList.toggle('is-active', index === currentIndex);
+    });
+
+    // Scroll active into view
+    const activeItem = items[currentIndex];
+    if (activeItem) {
+      activeItem.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+      });
+    }
+
+    // No disabling – we loop instead
+  }
+
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + items.length) % items.length; // wrap backwards
+      updateSectorCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % items.length; // wrap forwards
+      updateSectorCarousel();
+    });
+  }
+
+  // Optional: keep active tile in sync when user manually scrolls
+  let scrollTimeout;
+  track.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      const trackRect = track.getBoundingClientRect();
+      const centreX = trackRect.left + trackRect.width / 2;
+
+      let closestIndex = currentIndex;
+      let smallestDistance = Infinity;
+
+      items.forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        const itemCentre = rect.left + rect.width / 2;
+        const distance = Math.abs(itemCentre - centreX);
+        if (distance < smallestDistance) {
+          smallestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      currentIndex = closestIndex;
+      updateSectorCarousel();
+    }, 120);
+  });
+
+  updateSectorCarousel();
+}
+
   </script>
 
 </body>
