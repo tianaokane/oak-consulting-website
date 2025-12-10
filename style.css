@@ -603,6 +603,257 @@ main {
   flex: 1;
 }
 
+/* ---------- ABOUT PAGE ENHANCEMENTS ---------- */
+
+/* Hero refinements specific to About */
+.hero-subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-points {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.25rem;
+  font-size: 0.97rem;
+}
+
+.hero-points li + li {
+  margin-top: 0.25rem;
+}
+
+/* Secondary button for softer CTAs */
+.btn-secondary {
+  display: inline-block;
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-surface);
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary-strong);
+}
+
+/* Link-style button used in CTA band */
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.cta-actions .btn-link {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Tinted section background for subtle visual breaks */
+.section--tinted {
+  background: radial-gradient(circle at 0 0, rgba(186, 71, 52, 0.07), transparent 55%);
+}
+
+/* Snapshot / "At a glance" band */
+.snapshot-band {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.snapshot-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.snapshot-card {
+  text-align: left;
+}
+
+/* Story layout */
+.card--story {
+  padding: 1.6rem 1.6rem 1.8rem;
+}
+
+.story-grid {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.story-main p + p {
+  margin-top: 0.75rem;
+}
+
+.story-aside {
+  border-left: 3px solid rgba(186, 71, 52, 0.25);
+  padding-left: 1.25rem;
+}
+
+.pull-quote {
+  font-style: italic;
+  font-size: 0.98rem;
+  margin: 0 0 1rem;
+  color: var(--color-text-main);
+}
+
+.pull-quote p {
+  margin: 0;
+}
+
+.story-highlights ul {
+  padding-left: 1.1rem;
+  margin: 0.5rem 0 0;
+}
+
+.story-highlights li + li {
+  margin-top: 0.25rem;
+}
+
+.story-subtitle {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-strong);
+}
+
+/* Process steps */
+.process-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.process-step h3 {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Approach cards */
+.approach-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.approach-card {
+  padding: 1rem 1.05rem;
+  border-radius: 0.75rem;
+  background: #fdfbf7;
+}
+
+.approach-footer {
+  margin-top: 1.25rem;
+}
+
+/* Values */
+.value-card {
+  height: 100%;
+}
+
+.value-example {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+/* Team section */
+.team-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.team-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.team-avatar--placeholder {
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.9), transparent 55%),
+              linear-gradient(135deg, rgba(186, 71, 52, 0.15), rgba(186, 71, 52, 0.45));
+}
+
+.team-role {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.team-highlight {
+  font-size: 0.93rem;
+}
+
+/* Testimonials band */
+.testimonials-band {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.card--soft {
+  background: radial-gradient(circle at 0 0, rgba(186, 71, 52, 0.04), var(--color-surface));
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.testimonial blockquote {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+  font-size: 0.96rem;
+}
+
+.testimonial figcaption {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Responsive tweaks for About layouts */
+@media (min-width: 720px) {
+  .snapshot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .process-grid,
+  .approach-grid,
+  .testimonials-grid,
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .story-grid {
+    grid-template-columns: 3fr 2fr;
+    align-items: flex-start;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 /* ---------- HOME PAGE ENHANCEMENTS ---------- */
 
 /* Smooth scroll for in-page links (e.g. Book a consultation → contact) */
