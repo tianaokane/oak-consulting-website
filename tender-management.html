@@ -18,7 +18,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="top">
+<body id="top" class="page--gradient page-tenders">
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
@@ -53,9 +53,9 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-bg-tenders">
     <!-- Hero -->
-    <section class="hero" aria-labelledby="tm-hero-title">
+    <section class="hero hero--service reveal-on-scroll" aria-labelledby="tm-hero-title">
       <div class="container hero-inner">
         <div class="hero-content">
           <p class="intro-text">
@@ -72,7 +72,7 @@
     </section>
 
     <!-- Who this is for -->
-    <section class="section" aria-labelledby="tm-who-for-title">
+    <section class="section bg-alt-1 reveal-on-scroll" aria-labelledby="tm-who-for-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-who-for-title">Who is our tender management support for?</h2>
@@ -94,7 +94,7 @@
     </section>
 
     <!-- What’s included -->
-    <section class="section" aria-labelledby="tm-whats-included-title">
+    <section class="section bg-alt-2 reveal-on-scroll" aria-labelledby="tm-whats-included-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-whats-included-title">What’s included in our tender management support</h2>
@@ -134,7 +134,7 @@
     </section>
 
     <!-- How it works (process) -->
-    <section class="section" aria-labelledby="tm-process-title">
+    <section class="section bg-alt-3 reveal-on-scroll" aria-labelledby="tm-process-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-process-title">How our tender management process works</h2>
@@ -142,28 +142,28 @@
             We aim to make a complex process feel as manageable and structured as possible.
           </p>
 
-          <ol>
-            <li>
+          <ol class="process-steps">
+            <li class="process-step">
               <strong>Initial discussion.</strong> We talk through the tender opportunity (or type of tenders you’re
               interested in) and your capacity to deliver the work if successful.
             </li>
-            <li>
+            <li class="process-step">
               <strong>Go/no-go decision.</strong> Based on the requirements and your position, we help you decide
               whether to proceed with a bid or not.
             </li>
-            <li>
+            <li class="process-step">
               <strong>Response plan.</strong> We create a simple plan covering tasks, responsibilities and internal
               deadlines leading up to submission.
             </li>
-            <li>
+            <li class="process-step">
               <strong>Content development.</strong> Oak Consultancy drafts or supports the drafting of the quality
               responses, aligning them with the specification and scoring criteria.
             </li>
-            <li>
+            <li class="process-step">
               <strong>Review and refine.</strong> You review drafts, add detail and correct anything that doesn’t feel
               quite right; we refine and strengthen the final responses.
             </li>
-            <li>
+            <li class="process-step">
               <strong>Submission and learning.</strong> We support you with the final upload and, where feedback is
               provided, we help interpret it for future improvements.
             </li>
@@ -173,7 +173,7 @@
     </section>
 
     <!-- Benefits -->
-    <section class="section" aria-labelledby="tm-benefits-title">
+    <section class="section bg-alt-1 reveal-on-scroll" aria-labelledby="tm-benefits-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-benefits-title">Benefits of structured tender support</h2>
@@ -197,7 +197,7 @@
     </section>
 
     <!-- Working with us / packages -->
-    <section class="section" aria-labelledby="tm-working-with-us-title">
+    <section class="section bg-alt-2 reveal-on-scroll" aria-labelledby="tm-working-with-us-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-working-with-us-title">Working with us on tender management</h2>
@@ -224,7 +224,7 @@
     </section>
 
     <!-- FAQs -->
-    <section class="section" aria-labelledby="tm-faq-title">
+    <section class="section bg-alt-3 reveal-on-scroll" aria-labelledby="tm-faq-title">
       <div class="container">
         <div class="card">
           <h2 id="tm-faq-title">Frequently asked questions</h2>
@@ -257,7 +257,7 @@
     </section>
 
     <!-- CTA band -->
-    <section class="section cta-band" aria-label="Consultation call-to-action">
+    <section class="section cta-band bg-alt-2 reveal-on-scroll" aria-label="Consultation call-to-action">
       <div class="container">
         <div class="card cta-card">
           <h3>Considering a tender opportunity?</h3>
@@ -272,120 +272,119 @@
   </main>
 
   <!-- Footer -->
-<footer class="site-footer">
-  <div class="container footer-grid">
+  <footer class="site-footer">
+    <div class="container footer-grid">
 
-    <!-- Brand / sectors -->
-    <div class="footer-col footer-brand">
-      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
-      <div>
-        <p class="footer-tagline">
-          Practical funding and strategic support for organisations rooted in their communities.
-        </p>
-        <p class="footer-micro-label">We regularly work with:</p>
-        <p class="footer-micro-list">
-          Charities · Community groups · Schools · Sports clubs · Social enterprises
-        </p>
+      <!-- Brand / sectors -->
+      <div class="footer-col footer-brand">
+        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+        <div>
+          <p class="footer-tagline">
+            Practical funding and strategic support for organisations rooted in their communities.
+          </p>
+          <p class="footer-micro-label">We regularly work with:</p>
+          <p class="footer-micro-list">
+            Charities · Community groups · Schools · Sports clubs · Social enterprises
+          </p>
+        </div>
       </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="who-we-help.html">Who we help</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h4>Our services</h4>
+        <ul>
+          <li><a href="bid-writing.html">Bid Writing</a></li>
+          <li><a href="strategic-planning.html">Strategic Planning</a></li>
+          <li><a href="tender-management.html">Tender Management</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col footer-contact">
+        <h4>Get in touch</h4>
+        <p><strong>Columba:</strong> 07843 956546</p>
+        <p><strong>Karen:</strong> 07515 098543</p>
+        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+      </div>
+
     </div>
 
-    <!-- Quick links -->
-    <div class="footer-col">
-      <h4>Quick links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="who-we-help.html">Who we help</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <!-- Legal strip -->
+    <div class="footer-legal">
+      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+      <small>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+      </small>
     </div>
 
-    <!-- Services -->
-    <div class="footer-col">
-      <h4>Our services</h4>
-      <ul>
-        <li><a href="bid-writing.html">Bid Writing</a></li>
-        <li><a href="strategic-planning.html">Strategic Planning</a></li>
-        <li><a href="tender-management.html">Tender Management</a></li>
-      </ul>
-    </div>
+  </footer>
 
-    <!-- Contact -->
-    <div class="footer-col footer-contact">
-      <h4>Get in touch</h4>
-      <p><strong>Columba:</strong> 07843 956546</p>
-      <p><strong>Karen:</strong> 07515 098543</p>
-      <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-    </div>
+  <script>
+    // Footer year
+    const yearEl = document.getElementById('year');
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
 
-  </div>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
 
-  <!-- Legal strip -->
-<div class="footer-legal">
-  <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-  <small>
-    <a href="privacy-policy.html">Privacy Policy</a> ·
-    <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-  </small>
-</div>
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+        const nextState = !isOpen;
 
-</footer>
+        navToggle.setAttribute('aria-expanded', String(nextState));
+        document.body.classList.toggle('nav-open', nextState);
+      });
 
+      // Close menu when a nav link is clicked
+      nav.addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.classList.remove('nav-open');
+        }
+      });
+    }
 
-<script>
-  // Footer year
-  const yearEl = document.getElementById('year');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+    // Scroll reveal for elements with .reveal-on-scroll
+    const revealEls = document.querySelectorAll('.reveal-on-scroll');
 
-  // Mobile nav toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.nav');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target); // only animate once
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      const nextState = !isOpen;
-
-      navToggle.setAttribute('aria-expanded', String(nextState));
-      document.body.classList.toggle('nav-open', nextState);
-    });
-
-    // Close menu when a nav link is clicked
-    nav.addEventListener('click', (event) => {
-      if (event.target.tagName === 'A') {
-        navToggle.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('nav-open');
-      }
-    });
-  }
-
-  // Scroll reveal for elements with .reveal-on-scroll
-  const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            obs.unobserve(entry.target); // only animate once
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
-
-    revealEls.forEach((el) => observer.observe(el));
-  } else {
-    // Fallback: just show them
-    revealEls.forEach((el) => el.classList.add('is-visible'));
-  }
-</script>
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback: just show them
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
+  </script>
 
 </body>
 </html>

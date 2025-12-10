@@ -1865,6 +1865,65 @@ padding-bottom: 3rem;
     );
 }
 
+/* ---------- BID WRITING PAGE BACKGROUND ---------- */
+
+.page-bg-bid {
+  position: relative;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.06) 0%,
+      rgba(248, 245, 240, 0.9) 40%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/white-leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Glassy cards over the patterned background */
+.page-bg-bid .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* Remove big white gap before footer on Bid Writing page */
+.page-bg-bid + .site-footer,
+.page-bid + .site-footer {
+  margin-top: 0 !important;
+}
+
+/* ---------- TENDER MANAGEMENT PAGE BACKGROUND ---------- */
+
+.page-bg-tenders {
+  position: relative;
+  background:
+    /* Soft terra wash over subtle leaf pattern */
+    linear-gradient(
+      to bottom,
+      rgba(186, 71, 52, 0.06) 0%,
+      rgba(248, 245, 240, 0.9) 40%,
+      rgba(248, 245, 240, 1) 100%
+    ),
+    url("assets/textures/white-leaves.png");
+  background-size: 2400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Glassy cards over the patterned background */
+.page-bg-tenders .card {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(2px);
+}
+
+/* Make sure there isn’t a big gap before the footer on this page */
+.page-bg-tenders + .site-footer,
+.page-tenders + .site-footer {
+  margin-top: 0 !important;
+}
+
 /* ---------- STRATEGIC PLANNING PAGE BACKGROUND ---------- */
 
 .page-bg-strategic {
