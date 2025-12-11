@@ -133,7 +133,13 @@
               Tell us a little about your organisation and what you’d like support with. We’ll get back to you as soon as possible.
             </p>
 
-            <form class="contact-form">
+            <form 
+            class="contact-form"
+            action="https://formspree.io/f/xwpgwoab"
+            method="POST"
+          >
+            <input type="hidden" name="form-source" value="Contact page form">
+
               <label>
                 Name
                 <input type="text" name="name" autocomplete="name" required>
