@@ -643,26 +643,41 @@ if (sectorCarousel) {
 
   let currentIndex = 0;
 
-  function updateSectorCarousel() {
-    // Highlight active tile
+  // Highlight active tile and (optionally) centre it
+  function updateSectorCarousel(shouldScroll) {
     items.forEach((item, index) => {
-      item.classList.toggle('is-active', index === currentIndex);
+      const isActive = index === currentIndex;
+      item.classList.toggle('is-active', isActive);
+
+      if (isActive && shouldScroll) {
+        const trackRect = track.getBoundingClientRect();
+        const cardRect = item.getBoundingClientRect();
+
+        // amount we need to move so the card sits in the middle
+        const offset =
+          cardRect.left - (trackRect.left + (trackRect.width - cardRect.width) / 2);
+
+        track.scrollBy({
+          left: offset,
+          behavior: 'smooth'
+        });
+      }
     });
   }
 
   if (prevBtn && nextBtn) {
     prevBtn.addEventListener('click', () => {
       currentIndex = (currentIndex - 1 + items.length) % items.length; // wrap backwards
-      updateSectorCarousel();
+      updateSectorCarousel(true); // centre after moving
     });
 
     nextBtn.addEventListener('click', () => {
       currentIndex = (currentIndex + 1) % items.length; // wrap forwards
-      updateSectorCarousel();
+      updateSectorCarousel(true); // centre after moving
     });
   }
 
-  // Optional: keep active tile in sync when user manually scrolls
+  // Keep active tile in sync when user manually scrolls
   let scrollTimeout;
   track.addEventListener('scroll', () => {
     clearTimeout(scrollTimeout);
@@ -684,11 +699,12 @@ if (sectorCarousel) {
       });
 
       currentIndex = closestIndex;
-      updateSectorCarousel();
+      updateSectorCarousel(false); // just update highlight, don't scroll again
     }, 120);
   });
 
-  updateSectorCarousel();
+  // Initial highlight
+  updateSectorCarousel(false);
 }
 
   </script>
