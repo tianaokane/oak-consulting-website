@@ -648,18 +648,6 @@ if (sectorCarousel) {
     items.forEach((item, index) => {
       item.classList.toggle('is-active', index === currentIndex);
     });
-
-    // Scroll active into view
-    const activeItem = items[currentIndex];
-    if (activeItem) {
-      activeItem.scrollIntoView({
-        behavior: 'smooth',
-        inline: 'center',
-        block: 'nearest'
-      });
-    }
-
-    // No disabling – we loop instead
   }
 
   if (prevBtn && nextBtn) {
