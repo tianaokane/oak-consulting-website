@@ -1,418 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Favicon -->
-  <link rel="icon" sizes="any" type="image/png" href="assets/favicon/transparent-red-favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/transparent-red-favicon.png">
-
   <meta charset="UTF-8" />
-
-  <!-- Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services: Bid Writing, Strategic Planning & Tenders | Oak Consultancy</title>
+  <meta name="description" content="Oak Consultancy offers bid writing, strategic planning and tender management for charities, community groups and small organisations. Practical, jargon-free support." />
+  <link rel="icon" type="image/png" href="assets/favicon/transparent-red-favicon.png">
+  <link rel="apple-touch-icon" href="assets/favicon/transparent-red-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <title>Funding, Strategy & Tender Support Services | Oak Consultancy</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Explore Oak Consultancy’s services including bid writing, strategic planning and tender management, supporting charities and community organisations to grow sustainably."
-  />
-
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
+<body id="top">
 
-<body id="top" class="page-services">
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">
-          <img 
-            src="assets/logo/horizontal-red-leaf.png" 
-            alt="" 
-            class="brand-leaf"
-          >
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">Oak Consultancy</span>
-          <span class="brand-tagline">Opportunities, Access, Know-How</span>
-        </div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo/horizontal-red-leaf.png" alt="" class="brand-leaf">
+      <div class="brand-text">
+        <span class="brand-name">Oak Consultancy</span>
+        <span class="brand-tagline">Opportunities, Access, Know-How</span>
       </div>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
 
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<main>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="index.html#top">Home</a>
-        <a href="services.html">Services</a>
-        <a href="who-we-help.html">Who we help</a>
-        <a href="packages.html">Packages</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-
+  <!-- ── Hero ── -->
+  <section class="hero" aria-labelledby="services-title">
+    <div class="container">
+      <p class="eyebrow">Our services</p>
+      <h1 id="services-title">Practical support, tailored to your organisation.</h1>
+      <p class="lead">We focus on three areas where clear, experienced support makes a real difference. Work with us on one, or combine them into a joined-up package.</p>
+      <div class="hero-actions">
+        <a href="#bid-writing" class="btn btn-outline">Bid Writing</a>
+        <a href="#strategic-planning" class="btn btn-outline">Strategic Planning</a>
+        <a href="#tender-management" class="btn btn-outline">Tender Management</a>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- Main content with soft noise background -->
-  <main class="bg-soft-noise">
-    <!-- Hero -->
-    <section class="hero hero--service reveal-on-scroll" aria-labelledby="services-hero-title">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <p class="packages-hero-eyebrow">Our services</p>
-          <h1 id="services-hero-title">Practical funding and strategic support, tailored to your organisation.</h1>
-          <p class="intro-text">
-            Oak Consultancy focuses on three core areas: bid writing, strategic planning and tender management. 
-            We strip away jargon, keep the process manageable and help you focus on the work that matters most.
-          </p>
-          <p class="intro-text">
-            Some organisations need a one-off piece of work. Others prefer ongoing, long-term support. 
-            However you choose to work with us, the goal is the same: to save you time, reduce stress and improve your chances of success.
-          </p>
-
-          <div class="hero-actions">
-            <a href="contact.html#message-form-title" class="btn-primary">Book a free 30-minute call</a>
-            <a href="#core-services" class="btn-link">Skip to our core services ↓</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Snapshot band: services at a glance -->
-    <section class="section snapshot-band reveal-on-scroll" aria-labelledby="services-glance-title">
-      <div class="container">
-        <h2 id="services-glance-title" class="sr-only">Services at a glance</h2>
-        <div class="grid snapshot-grid">
-          <article class="card snapshot-card">
-            <p class="snapshot-heading">Bid writing</p>
-            <p class="snapshot-metric">Grants &amp; funding bids</p>
-            <p class="snapshot-copy">
-              Identifying realistic opportunities and preparing strong, clear applications that funders can understand quickly.
-            </p>
-          </article>
-
-          <article class="card snapshot-card">
-            <p class="snapshot-heading">Strategic planning</p>
-            <p class="snapshot-metric">Boards &amp; leadership</p>
-            <p class="snapshot-copy">
-              Facilitated planning support that turns priorities into realistic, fundable plans you can share with trustees and staff.
-            </p>
-          </article>
-
-          <article class="card snapshot-card">
-            <p class="snapshot-heading">Tender management</p>
-            <p class="snapshot-metric">Contracts &amp; e-tenders</p>
-            <p class="snapshot-copy">
-              Staying on top of portals, deadlines and compliance so you can submit complete, on-time tender responses.
-            </p>
-          </article>
-
-          <article class="card snapshot-card">
-            <p class="snapshot-heading">Flexible support</p>
-            <p class="snapshot-metric">One-off or ongoing</p>
-            <p class="snapshot-copy">
-              Choose between project-based work or a package of support spread across the year, depending on capacity and budget.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- How we work -->
-    <section class="section reveal-on-scroll" aria-labelledby="how-we-work-title">
-      <div class="container">
-        <div class="card">
-          <h2 id="how-we-work-title">How we work with you</h2>
-          <p class="section-intro">
-            Every organisation is different, so we start by understanding your context, capacity and goals. 
-            From there, we agree a realistic plan and level of support that fits your time and budget.
-          </p>
-
-          <ol class="process-steps">
-            <li class="process-step">
-              <strong>1. Initial conversation.</strong>
-              A short call to understand your organisation, current projects, deadlines and funding or planning needs.
-            </li>
-            <li class="process-step">
-              <strong>2. Agree focus and level of support.</strong>
-              Together we decide which bids, tenders or planning work to prioritise, and whether a one-off project or package makes most sense.
-            </li>
-            <li class="process-step">
-              <strong>3. Information gathering.</strong>
-              We request key documents and details so we can work accurately, without overwhelming your staff or volunteers.
-            </li>
-            <li class="process-step">
-              <strong>4. Drafting and shaping.</strong>
-              Oak Consultancy prepares drafts; you review and add detail; we refine until everything feels clear, realistic and funder-ready.
-            </li>
-            <li class="process-step">
-              <strong>5. Submission and follow-up.</strong>
-              We support you to submit on time and use any feedback to strengthen future bids, tenders and plans.
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core services -->
-    <section class="section" id="core-services" aria-labelledby="core-services-title">
-      <div class="container">
-        <h2 id="core-services-title" class="reveal-on-scroll">Our core services</h2>
-        <p class="section-intro reveal-on-scroll">
-          You can work with us on a single area or combine services into a joined-up package of support.
-        </p>
-
-        <div class="grid services-grid reveal-on-scroll">
-          <!-- Bid Writing -->
-          <article class="card service-card" id="bid-writing" aria-labelledby="bid-writing-title">
-            <p class="card-tag-pill">Grants &amp; funding bids</p>
-            <h3 id="bid-writing-title">Bid Writing</h3>
-            <p class="package-summary">
-              Support to identify realistic opportunities and prepare clear, compelling applications that reflect your work on the ground.
-            </p>
-
-            <h4>Typical support includes:</h4>
-            <ul class="package-list">
-              <li>Scanning for relevant grants and funding calls that fit your organisation or project.</li>
-              <li>Checking eligibility, guidance and criteria so you only apply for realistic opportunities.</li>
-              <li>Drafting and editing applications, including budgets and supporting documents.</li>
-              <li>Reviewing previous bids and feedback to strengthen future applications.</li>
-            </ul>
-
-            <p class="package-note">
-              Ideal if you’re short on time, unsure how to “translate” your work for funders, or want to improve your success rate.
-            </p>
-
-            <p>
-              <a href="bid-writing.html" class="btn-link">Learn more about Bid Writing →</a>
-            </p>
-          </article>
-
-          <!-- Strategic Planning -->
-          <article class="card service-card" id="strategic-planning" aria-labelledby="strategic-planning-title">
-            <p class="card-tag-pill">Boards &amp; leadership</p>
-            <h3 id="strategic-planning-title">Strategic Planning</h3>
-            <p class="package-summary">
-              Facilitated planning support to help trustees, committees and leadership teams agree clear priorities and practical next steps.
-            </p>
-
-            <h4>Typical support includes:</h4>
-            <ul class="package-list">
-              <li>Facilitated sessions with trustees, staff or volunteers to clarify priorities.</li>
-              <li>Support to define outcomes, milestones and measures of success.</li>
-              <li>Creating or refining strategic or project plans that funders can easily follow.</li>
-              <li>Mapping funding opportunities against your plans so bids are consistent and coherent.</li>
-            </ul>
-
-            <p class="package-note">
-              Helpful if you have lots of ideas, but need a realistic plan that matches your capacity and can be shared with funders.
-            </p>
-
-            <p>
-              <a href="strategic-planning.html" class="btn-link">Learn more about Strategic Planning →</a>
-            </p>
-          </article>
-
-          <!-- Tender Management -->
-          <article class="card service-card" id="tender-management" aria-labelledby="tender-management-title">
-            <p class="card-tag-pill">Contracts &amp; e-tenders</p>
-            <h3 id="tender-management-title">Tender Management</h3>
-            <p class="package-summary">
-              Support to stay on top of portals, paperwork and deadlines so you can submit complete, compliant tenders with less stress.
-            </p>
-
-            <h4>Typical support includes:</h4>
-            <ul class="package-list">
-              <li>Monitoring relevant tender portals and flagging suitable opportunities.</li>
-              <li>Reviewing documents, deadlines and compliance requirements.</li>
-              <li>Drafting responses, gathering evidence and completing submission forms.</li>
-              <li>Project-managing the process, including internal deadlines and checks.</li>
-            </ul>
-
-            <p class="package-note">
-              Useful if tenders feel overwhelming or are often squeezed in around other work.
-            </p>
-
-            <p>
-              <a href="tender-management.html" class="btn-link">Learn more about Tender Management →</a>
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Which service / package? -->
-    <section class="section reveal-on-scroll" aria-labelledby="which-service-title">
-      <div class="container">
-        <article class="card packages-fit-card">
-          <h2 id="which-service-title">Not sure which service (or package) you need?</h2>
-          <p class="section-intro">
-            Many organisations start by talking through their current situation, then choose a mix of services that fits their priorities.
-          </p>
-
-          <div class="packages-fit-grid">
-            <div>
-              <h3>Good starting points</h3>
-              <ul class="packages-fit-list">
-                <li>You have a specific deadline for a grant or tender and need help to get everything ready in time.</li>
-                <li>You know you need to improve your funding pipeline but aren’t sure where to start.</li>
-                <li>Your board or committee wants a clearer plan for the next 12–24 months.</li>
-                <li>You’d like steady support across the year, rather than rushing from one deadline to the next.</li>
-              </ul>
-            </div>
-            <div>
-              <h3>How we’ll guide you</h3>
-              <ul class="packages-fit-list">
-                <li>We’ll ask a few simple questions about your organisation, capacity and deadlines.</li>
-                <li>We’ll outline the pros and cons of one-off work versus a support package.</li>
-                <li>We’ll always be honest about what feels realistic for your size, stage and budget.</li>
-              </ul>
-              <p class="package-note">
-                You don’t have to come with a fully formed plan — part of our role is helping you shape it.
-              </p>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CTA band -->
-    <section class="section cta-band reveal-on-scroll" aria-label="Consultation call-to-action">
-      <div class="container">
-        <div class="card cta-card">
-          <h3>Ready to talk through your options?</h3>
-          <p>
-            A free 30-minute conversation is the best place to start. Tell us a little about your organisation and what
-            you’re trying to achieve, and we’ll suggest a practical way forward.
-          </p>
-          <div class="cta-actions">
-            <a href="contact.html#message-form-title" class="btn-primary">Arrange a free call</a>
-            <a href="packages.html" class="btn-link">Or see support packages first →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-
-      <!-- Brand / sectors -->
-      <div class="footer-col footer-brand">
-        <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy logo" class="footer-logo">
+  <!-- ── How we work ── -->
+  <section class="section section-alt" aria-labelledby="how-we-work-title">
+    <div class="container">
+      <div class="grid-2" style="align-items:start;gap:var(--gap);">
         <div>
-          <p class="footer-tagline">
-            Practical funding and strategic support for organisations rooted in their communities.
-          </p>
-          <p class="footer-micro-label">We regularly work with:</p>
-          <p class="footer-micro-list">
-            Charities · Community groups · Schools · Sports clubs · Social enterprises
-          </p>
+          <p class="eyebrow">How we work</p>
+          <h2 id="how-we-work-title">Every engagement starts the same way: understanding your reality.</h2>
+          <p class="lead mt-md">We don't apply a template. We start with a conversation about your organisation, capacity and goals — then agree a level of support that fits.</p>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <span class="step-num">1</span>
+            <div><h3>Initial conversation</h3><p>A short call to understand your context, deadlines and priorities.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <div><h3>Agree focus and approach</h3><p>We decide together which area of work to prioritise and how to structure support.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <div><h3>Gather and draft</h3><p>We collect key information and prepare drafts, working at a pace that suits your team.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">4</span>
+            <div><h3>Review, refine, submit</h3><p>You review and add detail; we refine until everything is clear, accurate and funder-ready.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-num">5</span>
+            <div><h3>Follow up and learn</h3><p>We support submission and use any feedback to strengthen future work.</p></div>
+          </div>
         </div>
       </div>
-
-      <!-- Quick links -->
-      <div class="footer-col">
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="who-we-help.html">Who we help</a></li>
-          <li><a href="packages.html">Packages</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div class="footer-col">
-        <h4>Our services</h4>
-        <ul>
-          <li><a href="bid-writing.html">Bid Writing</a></li>
-          <li><a href="strategic-planning.html">Strategic Planning</a></li>
-          <li><a href="tender-management.html">Tender Management</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="footer-col footer-contact">
-        <h4>Get in touch</h4>
-        <p><strong>Columba:</strong> 07843 956546</p>
-        <p><strong>Karen:</strong> 07515 098543</p>
-        <p><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
-        <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
-      </div>
-
     </div>
+  </section>
 
-    <!-- Legal strip -->
-    <div class="footer-legal">
-      <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
-      <small>
-        <a href="privacy-policy.html">Privacy Policy</a> ·
-        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
-      </small>
+  <!-- ── Bid Writing ── -->
+  <section class="section" id="bid-writing" aria-labelledby="bid-writing-title">
+    <div class="container">
+      <div class="service-block reveal">
+        <div>
+          <p class="service-tag">Grants &amp; funding bids</p>
+          <h2 id="bid-writing-title">Bid Writing</h2>
+          <p class="lead mt-md">Many organisations are doing excellent work but struggle to find time — and the right words — to explain it to funders. We help you find realistic opportunities and submit clear, honest bids that show the difference you make.</p>
+          <p class="mt-sm">You don't need a polished project plan to get started. If you have a rough idea, we can help shape it into something funders can understand and support.</p>
+          <a href="contact.html" class="btn btn-primary mt-md" style="display:inline-flex;">Talk to us about a bid</a>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="mb-md">What's included</h3>
+            <ul class="check-list">
+              <li>Scanning for realistic grants and funding calls that fit your organisation and project.</li>
+              <li>Checking eligibility and guidance so you only apply for the right opportunities.</li>
+              <li>Drafting and editing applications, budgets and supporting documents.</li>
+              <li>Preparing case studies and evidence where funders require them.</li>
+              <li>Reviewing previous bids and feedback to strengthen future applications.</li>
+              <li>Supporting you to submit on time, with consistent and complete documents.</li>
+            </ul>
+          </div>
+          <div class="card card-red mt-md">
+            <p style="font-size:.875rem;color:var(--ink-mid);">
+              <strong style="color:var(--ink);">Good to know:</strong> No consultant can guarantee funding — decisions sit with funders. What we can do is ensure your bids are clear, eligible, realistic and well-presented, and help you learn from any unsuccessful attempts.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Strategic Planning ── -->
+  <section class="section" id="strategic-planning" aria-labelledby="strategic-planning-title">
+    <div class="container">
+      <div class="service-block reveal">
+        <div>
+          <p class="service-tag">Boards &amp; leadership</p>
+          <h2 id="strategic-planning-title">Strategic Planning</h2>
+          <p class="lead mt-md">Lots of organisations know what they want to do — but putting it into a plan that's realistic, coherent and fundable is harder than it sounds. We facilitate that process and help you produce documents that funders can follow easily.</p>
+          <p class="mt-sm">Particularly useful if your board or committee has lots of ideas but needs a clearer picture of priorities, timelines and what's actually achievable with your current capacity.</p>
+          <a href="contact.html" class="btn btn-primary mt-md" style="display:inline-flex;">Discuss a planning project</a>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="mb-md">What's included</h3>
+            <ul class="check-list">
+              <li>Facilitated sessions with trustees, staff or volunteers to clarify priorities and agree direction.</li>
+              <li>Support to define outcomes, milestones and realistic measures of success.</li>
+              <li>Creating or refining strategic plans, project plans and theory-of-change documents.</li>
+              <li>Mapping funding opportunities against your plans so bids are consistent and coherent.</li>
+              <li>Review of existing plans and honest feedback on what's realistic given your capacity.</li>
+            </ul>
+          </div>
+          <div class="card card-red mt-md">
+            <p style="font-size:.875rem;color:var(--ink-mid);">
+              <strong style="color:var(--ink);">Ideal if:</strong> you have a mix of ideas but no agreed plan, you're starting a new project, or your board needs a clearer picture of the next 12–24 months.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── Tender Management ── -->
+  <section class="section" id="tender-management" aria-labelledby="tender-management-title">
+    <div class="container">
+      <div class="service-block reveal">
+        <div>
+          <p class="service-tag">Contracts &amp; e-tenders</p>
+          <h2 id="tender-management-title">Tender Management</h2>
+          <p class="lead mt-md">Tenders are often time-consuming, compliance-heavy and easy to miss. We monitor relevant portals, highlight the right opportunities and manage the process from start to submission — so tenders stop being a source of stress.</p>
+          <p class="mt-sm">Whether you're new to tendering or regularly submitting but struggling to keep up, we can help you respond with confidence to the contracts that matter most.</p>
+          <a href="contact.html" class="btn btn-primary mt-md" style="display:inline-flex;">Talk about tender support</a>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="mb-md">What's included</h3>
+            <ul class="check-list">
+              <li>Monitoring relevant tender portals and flagging suitable opportunities in time to act.</li>
+              <li>Reviewing documents, deadlines and compliance requirements before committing.</li>
+              <li>Drafting responses, gathering evidence and completing submission forms.</li>
+              <li>Project-managing the process, including internal deadlines and quality checks.</li>
+              <li>Supporting you to build a library of reusable information for future tenders.</li>
+            </ul>
+          </div>
+          <div class="card card-red mt-md">
+            <p style="font-size:.875rem;color:var(--ink-mid);">
+              <strong style="color:var(--ink);">Useful if:</strong> tenders feel overwhelming, are often missed, or are being squeezed in around your other work at short notice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Not sure? ── -->
+  <section class="section section-alt" aria-labelledby="not-sure-title">
+    <div class="container">
+      <div class="card reveal" style="max-width:700px;margin-inline:auto;text-align:center;">
+        <p class="eyebrow">Not sure which service fits?</p>
+        <h2 id="not-sure-title">That's fine. Most organisations start that way.</h2>
+        <p style="color:var(--ink-mid);margin-top:1rem;margin-bottom:2rem;">We'll ask a few simple questions about your organisation, priorities and budget — then suggest what makes most sense. You don't need a fully formed idea to reach out.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
+          <a href="contact.html" class="btn btn-primary">Book a free 30-minute call</a>
+          <a href="packages.html" class="btn btn-outline">See our packages and pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <img src="assets/logo/horizontal-red-leaf.png" alt="Oak Consultancy" class="footer-logo">
+      <p class="footer-tagline">Practical funding and strategic support for organisations rooted in their communities.</p>
+      <p class="footer-sectors mt-sm">Charities · Community groups · Schools · Sports clubs · Social enterprises</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#bid-writing">Bid Writing</a></li>
+        <li><a href="services.html#strategic-planning">Strategic Planning</a></li>
+        <li><a href="services.html#tender-management">Tender Management</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Get in touch</h4>
+      <p><strong style="color:#8a8078;">Columba:</strong> 07843 956546</p>
+      <p><strong style="color:#8a8078;">Karen:</strong> 07515 098543</p>
+      <p style="margin-top:.5rem;"><a href="mailto:columba@oakconsultancy.org">columba@oakconsultancy.org</a></p>
+      <p><a href="mailto:karen@oakconsultancy.org">karen@oakconsultancy.org</a></p>
+    </div>
+  </div>
+  <div class="footer-legal container">
+    <small>© <span id="year"></span> Oak Consultancy. All rights reserved.</small>
+    <small><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></small>
+  </div>
+</footer>
 
   <script>
-    // Footer year
-    const yearEl = document.getElementById('year');
-    if (yearEl) {
-      yearEl.textContent = new Date().getFullYear();
-    }
-
-    // Mobile nav toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-
-    if (navToggle && nav) {
-      navToggle.addEventListener('click', () => {
-        const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-        const nextState = !isOpen;
-
-        navToggle.setAttribute('aria-expanded', String(nextState));
-        document.body.classList.toggle('nav-open', nextState);
+    const yr = document.getElementById('year');
+    if (yr) yr.textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const nav    = document.querySelector('.nav');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        document.body.classList.toggle('nav-open', !open);
       });
-
-      // Close menu when a nav link is clicked
-      nav.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A') {
-          navToggle.setAttribute('aria-expanded', 'false');
-          document.body.classList.remove('nav-open');
-        }
+      nav.addEventListener('click', e => {
+        if (e.target.tagName === 'A') { toggle.setAttribute('aria-expanded', 'false'); document.body.classList.remove('nav-open'); }
       });
     }
-
-    // Scroll reveal for elements with .reveal-on-scroll
-    const revealEls = document.querySelectorAll('.reveal-on-scroll');
-
+    const revealEls = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver(
-        (entries, obs) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible');
-              obs.unobserve(entry.target); // only animate once
-            }
-          });
-        },
-        { threshold: 0.15 }
-      );
-
-      revealEls.forEach((el) => observer.observe(el));
-    } else {
-      // Fallback: just show them
-      revealEls.forEach((el) => el.classList.add('is-visible'));
-    }
+      const io = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); obs.unobserve(entry.target); } });
+      }, { threshold: 0.1 });
+      revealEls.forEach(el => io.observe(el));
+    } else { revealEls.forEach(el => el.classList.add('visible')); }
   </script>
 </body>
 </html>
